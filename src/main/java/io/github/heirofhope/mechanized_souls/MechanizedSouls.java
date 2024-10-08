@@ -17,7 +17,7 @@ public class MechanizedSouls implements ModInitializer {
 
     @Override
     public void onInitialize(ModContainer mod) {
-		ModConfiguredFeatures.registerConfiguredFeature();
+	//	ModConfiguredFeatures.registerConfiguredFeature();
         LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 		ModItems.RegisterModItems();
     }

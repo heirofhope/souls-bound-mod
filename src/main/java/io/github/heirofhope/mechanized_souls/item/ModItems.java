@@ -15,6 +15,9 @@ public class ModItems {
 	public static final Item lemon = registeritem("lemon",
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ItemGroup.FOOD)));
 
+	public static final Item soul_cookie = registeritem("soul_cookie",
+		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(4).build()).group(ItemGroup.FOOD)));
+
 
 
 
