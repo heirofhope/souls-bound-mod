@@ -15,7 +15,7 @@ public class ModItems {
 		new Item(new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",
-		new Item(new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 	public static final Item closed_contract = registeritem("closed_contract",
 		new ClosedContractItem(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
