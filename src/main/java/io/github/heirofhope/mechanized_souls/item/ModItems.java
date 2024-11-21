@@ -1,6 +1,8 @@
 package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
+import io.github.heirofhope.mechanized_souls.item.custom.ClosedContractItem;
+import io.github.heirofhope.mechanized_souls.item.custom.ContractItem;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -18,9 +20,11 @@ public class ModItems {
 	public static final Item book_cypher = registeritem("book_cypher",
 		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
 	public static final Item closed_contract = registeritem("closed_contract",
-		new WrittenBookItem (new QuiltItemSettings().group(ItemGroup.MISC)));
+		new ClosedContractItem(new QuiltItemSettings().maxCount(1).group(ModItemGroup.HEIR_TAB)));
+
 	public static final Item open_contract = registeritem("open_contract",
-		new WritableBookItem (new QuiltItemSettings().group(ItemGroup.MISC)));
+		new ContractItem(new QuiltItemSettings().maxCount(1).group(ModItemGroup.HEIR_TAB)));
+
 
 
 
