@@ -62,24 +62,25 @@ public class KnightEntity extends TameableEntity {
 		ItemStack itemStack = player.getStackInHand(hand);
 		Item item = itemStack.getItem();
 		if (this.world.isClient) {
-			boolean bl = this.isOwner(player) || this.isTamed() || itemStack.isOf(Items.BONE) && !this.isTamed();
+			boolean bl = this.isOwner(player) || this.isTamed() || itemStack.isOf(ModItems.soul_cookie) && !this.isTamed();
 			return bl ? ActionResult.CONSUME : ActionResult.PASS;
 
 
-			if (itemStack.isOf(Items.BONE)) {
+		}else{
+
+			if (itemStack.isOf(ModItems.soul_cookie)) {
 				if (!player.getAbilities().creativeMode) {
 					itemStack.decrement(1);
 				}
 
-				if (this.random.nextInt(3) == 0) {
+
 					this.setOwner(player);
 					this.navigation.stop();
 					this.setTarget(null);
 					this.setSitting(true);
 					this.world.sendEntityStatus(this, EntityStatuses.ADD_POSITIVE_PLAYER_REACTION_PARTICLES);
-				} else {
-					this.world.sendEntityStatus(this, EntityStatuses.ADD_NEGATIVE_PLAYER_REACTION_PARTICLES);
-				}
+
+
 				return ActionResult.SUCCESS;
 			}
 
