@@ -12,7 +12,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class ModItems {
 
-	public static final Item ferrocium = registeritem("ferrocium",
+	public static final Item FERROCIUM = registeritem("ferrocium",
 		new Item(new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",
