@@ -1,6 +1,7 @@
 package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
+import io.github.heirofhope.mechanized_souls.item.custom.ContractItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -21,7 +22,7 @@ public class ModItems {
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.HEIR_TAB)));
 
 	public static final Item OPEN_CONTRACT = registeritem("open_contract",
-		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.HEIR_TAB)));
+		new ContractItem(new QuiltItemSettings().maxCount(1).group(ModItemGroup.HEIR_TAB)));
 
 
 	public static final Item LEMON = registeritem("lemon",

@@ -1,6 +1,9 @@
 package io.github.heirofhope.mechanized_souls;
 
 import io.github.heirofhope.mechanized_souls.item.ModItems;
+import io.github.heirofhope.mechanized_souls.util.screen.ContractScreenHandler;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -19,6 +22,7 @@ public class MechanizedSouls implements ModInitializer {
 	//	ModConfiguredFeatures.registerConfiguredFeature();
         LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 		ModItems.RegisterModItems();
+		Registry.register(Registry.SCREEN_HANDLER, new Identifier("eternity", "contract"), ContractScreenHandler.TYPE);
     }
 }
 
