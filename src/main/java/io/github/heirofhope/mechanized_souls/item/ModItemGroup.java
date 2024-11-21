@@ -9,4 +9,6 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
 	public static final ItemGroup HEIR_TAB = FabricItemGroupBuilder.build(
 		new Identifier(MechanizedSouls.MOD_ID, "heir_tab"), () ->new ItemStack(ModItems.FERROCIUM));
+	public static final ItemGroup FOX_TAB = FabricItemGroupBuilder.build(
+		new Identifier(MechanizedSouls.MOD_ID, "fox_tab"), () ->new ItemStack(ModItems.closed_contract));
 }
