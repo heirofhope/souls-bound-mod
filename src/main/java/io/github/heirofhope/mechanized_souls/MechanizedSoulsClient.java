@@ -6,5 +6,6 @@ import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 public class MechanizedSoulsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient(ModContainer mod) {
+
 	}
 }
