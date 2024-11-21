@@ -1,5 +1,8 @@
 {
   "item.mechanized_souls.lemon": "lemon",
   "item.mechanized_souls.ferrocium": "ferrocium",
-  "item.mechanized_souls.soul_cookie": "soul cookie"
+  "item.mechanized_souls.soul_cookie": "soul cookie",
+  "item.mechanized_souls.book_cypher": "tome of a void walker",
+  "item.mechanized_souls.closed_contract": "closed contract",
+  "item.mechanized_souls.open_contract": "open contract"
 }
