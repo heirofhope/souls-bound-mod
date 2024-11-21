@@ -12,10 +12,11 @@ public class ModItems {
 
 	public static final Item FERROCIUM = registeritem("ferrocium",
 		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
-	public static final Item lemon = registeritem("lemon",
+
+	public static final Item LEMON = registeritem("lemon",
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ItemGroup.FOOD)));
 
-	public static final Item soul_cookie = registeritem("soul_cookie",
+	public static final Item SOUL_COOKIE = registeritem("soul_cookie",
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(4).build()).group(ItemGroup.FOOD)));
 	public static final Item book_cypher = registeritem("book_cypher",
 		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
@@ -36,9 +37,6 @@ public class ModItems {
 }
 
 	public  static  void RegisterModItems() {
-
-
-
 		MechanizedSouls.LOGGER.debug("Registering Mod items for" + MechanizedSouls.MOD_ID);
 	}
 }
