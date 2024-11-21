@@ -1,9 +1,12 @@
 package io.github.heirofhope.mechanized_souls.item;
 
+import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -19,6 +22,8 @@ public class ModItems {
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(4).build()).group(ItemGroup.FOOD)));
 
 
+	public static final Item KNIGHT_SPAWNEGG = registeritem("knight_spawnegg",
+		new SpawnEggItem(ModEntities.KNIGHT,0x003366, 0xE0E0E0, new FabricItemSettings().group(ItemGroup.MISC)));
 
 
 
