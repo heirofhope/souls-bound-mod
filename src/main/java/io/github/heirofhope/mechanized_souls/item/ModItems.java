@@ -18,16 +18,15 @@ public class ModItems {
 
 	public static final Item SOUL_COOKIE = registeritem("soul_cookie",
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(4).build()).group(ItemGroup.FOOD)));
-	public static final Item book_cypher = registeritem("book_cypher",
-		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
-	public static final Item closed_contract = registeritem("closed_contract",
-		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
-	public static final Item open_contract = registeritem("open_contract",
+
+	public static final Item BOOK_CYPHER = registeritem("book_cypher",
 		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
 
+	public static final Item CLOSED_CONTRACT = registeritem("closed_contract",
+		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
 
-
-
+	public static final Item OPEN_CONTRACT = registeritem("open_contract",
+		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
 
 
 
