@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " pf",
+    "pip",
+    " p "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:ink_sac"
+    },
+    "f": {
+      "item": "minecraft:feather"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "mechanized_souls:open_contract",
+    "count": 1
+  }
+}

@@ -1,7 +1,6 @@
 package io.github.heirofhope.mechanized_souls;
 
 import io.github.heirofhope.mechanized_souls.item.ModItems;
-//import io.github.heirofhope.mechanized_souls.world.feature.ModConfiguredFeatures;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -17,9 +16,13 @@ public class MechanizedSouls implements ModInitializer {
 
     @Override
     public void onInitialize(ModContainer mod) {
-	//	ModConfiguredFeatures.registerConfiguredFeature();
-        LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
+		//	ModConfiguredFeatures.registerConfiguredFeature();
+		LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 		ModItems.RegisterModItems();
-    }
+
+	}
 }
-//modding sucks dont do it
+
+
+
+//      Don't Look At icon.png, Worst Mistake Of My Life.

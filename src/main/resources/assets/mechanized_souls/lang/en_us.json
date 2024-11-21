@@ -1,8 +1,9 @@
 {
-  "item.mechanized_souls.lemon": "lemon",
-  "item.mechanized_souls.ferrocium": "ferrocium",
-  "item.mechanized_souls.soul_cookie": "soul cookie",
-  "item.mechanized_souls.book_cypher": "tome of a void walker",
-  "item.mechanized_souls.closed_contract": "closed contract",
-  "item.mechanized_souls.open_contract": "open contract"
+  "item.mechanized_souls.lemon": "Lemon",
+  "item.mechanized_souls.ferrocium": "Ferrocium",
+  "item.mechanized_souls.soul_cookie": "Soul Cookie",
+  "item.mechanized_souls.book_cypher": "Book Of Cypher",
+  "item.mechanized_souls.closed_contract": "Signed Contract",
+  "item.mechanized_souls.open_contract": "Empty Contract",
+  "itemGroup.mechanized_souls.heir_tab": "Souls-Bound"
 }

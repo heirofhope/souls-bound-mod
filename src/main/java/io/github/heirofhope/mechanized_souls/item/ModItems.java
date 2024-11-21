@@ -1,7 +1,9 @@
 package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
-import net.minecraft.item.*;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -18,9 +20,9 @@ public class ModItems {
 	public static final Item book_cypher = registeritem("book_cypher",
 		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
 	public static final Item closed_contract = registeritem("closed_contract",
-		new WrittenBookItem (new QuiltItemSettings().group(ItemGroup.MISC)));
+		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
 	public static final Item open_contract = registeritem("open_contract",
-		new WritableBookItem (new QuiltItemSettings().group(ItemGroup.MISC)));
+		new Item(new QuiltItemSettings().group(ItemGroup.MISC)));
 
 
 
@@ -29,8 +31,7 @@ public class ModItems {
 
 
 
-
-	public static Item registeritem(String name, Item item) {
+	private static Item registeritem(String name,Item item) {
 	return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), item);
 }
 

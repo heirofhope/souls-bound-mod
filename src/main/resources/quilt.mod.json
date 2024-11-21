@@ -5,11 +5,12 @@
 			"id": "mechanized_souls",
 			"version": "${version}",
 			"metadata": {
-				"name": "souls bound",
-				"description": "warcrimes",
+				"name": "Souls Bound",
+				"description": "Make Big Buff Men With Ferrocium!!11!!!1!",
 				"contributors": {
 					"Heir": "Owner",
-					"foxcon": "code"
+					"Fox": "Coder",
+					"Hour": "Modeler & Coder"
 				},
 				"contact": {},
 				"icon": "assets/example_mod/icon.png"
@@ -34,6 +35,6 @@
                 "versions": ">=1.19.2"
             }
         ]
-    }, 
+    },
     "mixin": "mechanized_souls.mixins.json"
 }

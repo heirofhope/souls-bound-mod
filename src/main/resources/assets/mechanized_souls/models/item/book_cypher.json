@@ -1,0 +1,9 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mechanized_souls:item/book_cypher_gui"
+  }
+}
+
+
+
