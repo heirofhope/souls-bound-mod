@@ -5,5 +5,7 @@
   "item.mechanized_souls.book_cypher": "tome of the void walker",
   "item.mechanized_souls.closed_contract": "Signed Contract",
   "item.mechanized_souls.open_contract": "Empty Contract",
-  "itemGroup.mechanized_souls.heir_tab": "Souls-Bound"
+  "itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+
+  "item.eternity.closed_contract.tooltip": "Signed By {player}"
 }
