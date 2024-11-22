@@ -5,7 +5,6 @@ import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.Tameable;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -15,7 +14,6 @@ import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -34,7 +32,7 @@ public class KnightEntity extends TameableEntity {
 	protected void initGoals() {
 		this.goalSelector.add(0, new SwimGoal(this));
 		this.goalSelector.add(1, new AttackWithOwnerGoal(this));
-
+		this.goalSelector.add(2,new WanderAroundGoal(this,2,30));
 
 	}
 
