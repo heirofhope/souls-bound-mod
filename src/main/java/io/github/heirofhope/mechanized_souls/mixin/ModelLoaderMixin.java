@@ -30,5 +30,9 @@ public abstract class ModelLoaderMixin {
 	public void addHandHeldModel(CallbackInfo ci) {
 		// Register the custom model for claymore
 		this.addModel(new ModelIdentifier(MechanizedSouls.MOD_ID, "book_cypher_held", "inventory"));
-	}
+
+
+
+
+		}
 }

@@ -29,6 +29,9 @@ public abstract class ItemRendererMixin {
 	private static final Object BOOK_CYPHER = renderBakedItemQuads();
 
 	@Unique
+	private static final Object dawn_cleaver = renderBakedItemQuads();
+
+	@Unique
 	private static Object renderBakedItemQuads() {
 		return null;
 	}
