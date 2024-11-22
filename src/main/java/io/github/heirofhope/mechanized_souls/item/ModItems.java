@@ -1,6 +1,5 @@
 package io.github.heirofhope.mechanized_souls.item;
 
-import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import io.github.heirofhope.mechanized_souls.item.custom.ClosedContractItem;
 import io.github.heirofhope.mechanized_souls.item.custom.ContractItem;
