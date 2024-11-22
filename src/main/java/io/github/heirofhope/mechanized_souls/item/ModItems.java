@@ -3,8 +3,10 @@ package io.github.heirofhope.mechanized_souls.item;
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import io.github.heirofhope.mechanized_souls.item.custom.ClosedContractItem;
 import io.github.heirofhope.mechanized_souls.item.custom.ContractItem;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -31,6 +33,8 @@ public class ModItems {
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder()
 			.hunger(4).build()).maxCount(16).group(ModItemGroup.HEIR_TAB)));
 
+	public static final Item dawn_cleaver = registeritem("dawn_cleaver",
+		new Item (new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 
 

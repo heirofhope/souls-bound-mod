@@ -7,6 +7,7 @@
   "item.mechanized_souls.closed_contract": "Signed Contract",
   "item.mechanized_souls.open_contract": "Empty Contract",
   "item.eternity.closed_contract.tooltip": "Signed By {player}",
+  "item.mechanized_souls.dawn_cleaver": "the dawn cleaver",
 
   "itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
   "itemGroup.mechanized_souls.fox_tab": "Fox's Tomfoolery"
