@@ -6,9 +6,10 @@
   "item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
   "item.mechanized_souls.closed_contract": "Signed Contract",
   "item.mechanized_souls.open_contract": "Empty Contract",
-  "item.eternity.closed_contract.tooltip": "Signed By {player}",
-  "item.mechanized_souls.dawn_cleaver": "the dawn cleaver",
+  "item.mechanized_souls.closed_contract.tooltip": "Signed By {player}",
 
   "itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
-  "itemGroup.mechanized_souls.fox_tab": "Fox's Tomfoolery"
+  "itemGroup.mechanized_souls.fox_tab": "Fox's Tomfoolery",
+
+  "item.mechanized_souls.knight_spawnegg": "Ferrocium Knight"
 }

@@ -39,7 +39,7 @@ public abstract class ItemRendererMixin {
 		argsOnly = true
 	)
 	public BakedModel useHandHeldModel(BakedModel value, ItemStack stack, ModelTransformation.Mode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
-		// Check if the item is the Ruby Staff and not in GUI mode
+		// Check if the item is the item held and not in GUI mode
 		if (stack.isOf(ModItems.book_cypher) && renderMode != ModelTransformation.Mode.GUI) {
 			// Replace the model with a custom model
 			return MinecraftClient.getInstance()

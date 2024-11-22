@@ -1,6 +1,9 @@
 package io.github.heirofhope.mechanized_souls;
 
+import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
+import io.github.heirofhope.mechanized_souls.Entity.custom.KnightEntity;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -16,13 +19,9 @@ public class MechanizedSouls implements ModInitializer {
 
     @Override
     public void onInitialize(ModContainer mod) {
-		//	ModConfiguredFeatures.registerConfiguredFeature();
-		LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
+	//	ModConfiguredFeatures.registerConfiguredFeature();
+        LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 		ModItems.RegisterModItems();
-
-	}
+		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
+    }
 }
-
-
-
-//      Don't Look At icon.png, Worst Mistake Of My Life.
