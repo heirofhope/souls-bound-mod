@@ -1,7 +1,7 @@
 package io.github.heirofhope.mechanized_souls.item.custom;
 
-import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
-import io.github.heirofhope.mechanized_souls.Entity.custom.KnightEntity;
+import io.github.heirofhope.mechanized_souls.entity.ModEntities;
+import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;

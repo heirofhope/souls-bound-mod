@@ -1,7 +1,7 @@
-package io.github.heirofhope.mechanized_souls.Entity.custom;
+package io.github.heirofhope.mechanized_souls.entity.custom;
 
 
-import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
+import io.github.heirofhope.mechanized_souls.entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityStatuses;

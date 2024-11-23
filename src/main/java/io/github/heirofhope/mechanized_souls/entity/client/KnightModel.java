@@ -1,8 +1,8 @@
-package io.github.heirofhope.mechanized_souls.Entity.client;
+package io.github.heirofhope.mechanized_souls.entity.client;
 
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import io.github.heirofhope.mechanized_souls.Entity.custom.KnightEntity;
+import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;

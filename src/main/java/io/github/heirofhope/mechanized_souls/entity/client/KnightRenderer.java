@@ -1,7 +1,7 @@
-package io.github.heirofhope.mechanized_souls.Entity.client;
+package io.github.heirofhope.mechanized_souls.entity.client;
 
 
-import io.github.heirofhope.mechanized_souls.Entity.custom.KnightEntity;
+import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;

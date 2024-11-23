@@ -1,6 +1,6 @@
-package io.github.heirofhope.mechanized_souls.Entity;
+package io.github.heirofhope.mechanized_souls.entity;
 
-import io.github.heirofhope.mechanized_souls.Entity.custom.KnightEntity;
+import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;

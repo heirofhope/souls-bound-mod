@@ -1,7 +1,8 @@
 package io.github.heirofhope.mechanized_souls;
 
-import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
-import io.github.heirofhope.mechanized_souls.Entity.custom.KnightEntity;
+import io.github.heirofhope.mechanized_souls.effect.ModEffects;
+import io.github.heirofhope.mechanized_souls.entity.ModEntities;
+import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.quiltmc.loader.api.ModContainer;
@@ -23,5 +24,6 @@ public class MechanizedSouls implements ModInitializer {
         LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 		ModItems.RegisterModItems();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
+		ModEffects.registerEffects();
     }
 }

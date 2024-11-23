@@ -13,5 +13,7 @@
   "itemGroup.mechanized_souls.fox_tab": "Fox's Tomfoolery",
 
   "item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
-  "item.mechanized_souls.knight": "Ferrocium Knight"
+  "item.mechanized_souls.knight": "Ferrocium Knight",
+
+  "effect.mechanized_souls.soullock": "SoulLock"
 }

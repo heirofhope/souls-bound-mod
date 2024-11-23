@@ -1,4 +1,4 @@
-package io.github.heirofhope.mechanized_souls.Entity.client;
+package io.github.heirofhope.mechanized_souls.entity.client;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
