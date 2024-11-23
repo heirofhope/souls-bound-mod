@@ -6,11 +6,12 @@
 			"version": "${version}",
 			"metadata": {
 				"name": "Souls Bound",
-				"description": "Make Big Buff Men With Ferrocium!!11!!!1!",
+				"description": "Make Big Buff Metallic Men With Ferrocium!!11!!!1!",
 				"contributors": {
 					"Heir": "Owner",
 					"Fox": "Coder",
-					"Hour": "Modeler & Coder"
+					"Hour": "Modeler & Coder",
+					"Aristu": "Coder"
 				},
 				"contact": {},
 				"icon": "assets/example_mod/icon.png"

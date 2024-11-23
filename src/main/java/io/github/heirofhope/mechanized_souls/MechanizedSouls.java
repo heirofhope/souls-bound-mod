@@ -4,6 +4,7 @@ import io.github.heirofhope.mechanized_souls.effect.ModEffects;
 import io.github.heirofhope.mechanized_souls.entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
+import io.github.heirofhope.mechanized_souls.util.BeforeDeathHandler;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
@@ -25,5 +26,6 @@ public class MechanizedSouls implements ModInitializer {
 		ModItems.RegisterModItems();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
 		ModEffects.registerEffects();
+		BeforeDeathHandler.register();
     }
 }
