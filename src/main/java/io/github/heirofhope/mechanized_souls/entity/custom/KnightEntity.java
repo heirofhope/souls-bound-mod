@@ -19,17 +19,29 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtHelper;
 import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public class KnightEntity extends TameableEntity {
+	protected static final TrackedData<Boolean> DORMANT = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+	public static final TrackedData<Optional<BlockPos>> DORMANT_POS = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.OPTIONAL_BLOCK_POS);
+
+	public static final TrackedData<Integer> ATTACK_STATE = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.INTEGER);
+	public static final TrackedData<Integer> ACTION_STATE = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.INTEGER);
 
 	public static final ActionResult RESULT = null;
 
@@ -92,42 +104,38 @@ public class KnightEntity extends TameableEntity {
 
 	@Override
 	public ActionResult interactMob(PlayerEntity player, Hand hand) {
-		ItemStack itemstack = player.getStackInHand(hand);
-		Item item = itemstack.getItem();
-
-		Item itemForTaming = ModItems.soul_cookie;
-
-		if (item == itemForTaming && !isTamed()) {
-			if (this.world.isClient()) {
-				return ActionResult.CONSUME;
-			} else {
-				if (!player.getAbilities().creativeMode) {
-					itemstack.decrement(1);
-				}
-
-				if (!this.world.isClient()) {
-					super.setOwner(player);
-					this.navigation.recalculatePath();
-					this.setTarget(null);
-					this.world.sendEntityStatus(this, (byte)7);
-					setSit(true);
-					this.world.sendEntityStatus(this, EntityStatuses.ADD_POSITIVE_PLAYER_REACTION_PARTICLES);
-				}
-
+		if(player.getStackInHand(hand).isEmpty() && player.getUuid().equals(this.getOwnerUuid())) {
+			if(player.isSneaking()) {
+				if(!player.getAbilities().creativeMode)
+					player.setStackInHand(hand, ModItems.KNIGHT_SPAWNEGG.getDefaultStack());
+				this.remove(RemovalReason.DISCARDED);
 				return ActionResult.SUCCESS;
+			} else {
+				this.cycleActionState(player);
 			}
 		}
-
-		if(isTamed() && !this.world.isClient() && hand == Hand.MAIN_HAND) {
-			setSit(!isSitting());
-			return ActionResult.SUCCESS;
-		}
-
-		if (itemstack.getItem() == itemForTaming) {
-			return ActionResult.PASS;
-		}
-
 		return super.interactMob(player, hand);
+	}
+
+	private void cycleActionState(PlayerEntity player) {
+		if(getActionState() == 0) {
+			setActionState(2);
+			player.sendMessage(Text.translatable("amogus", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.DARK_RED).withObfuscated(true).withFont(new Identifier("minecraft", "default"))), true);
+		} else if(getActionState() == 2) {
+			setActionState(1);
+			player.sendMessage(Text.translatable("info.aylyth.mould_activate", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.AQUA)), true);
+		} else if(getActionState() == 1) {
+			setActionState(0);
+			player.sendMessage(Text.translatable("info.aylyth.mould_deactivate", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.DARK_GRAY)), true);
+		}
+
+
+	}
+	public int getActionState() {
+		return this.dataTracker.get(ACTION_STATE);
+	}
+	public void setActionState(int i) {
+		this.dataTracker.set(ACTION_STATE, i);
 	}
 
 	public void setSit(boolean sitting) {
