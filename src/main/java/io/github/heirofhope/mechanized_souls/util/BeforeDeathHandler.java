@@ -19,7 +19,7 @@ public class BeforeDeathHandler {
 				ItemStack weapon = player.getMainHandStack();
 
 				if (weapon.getItem() == ModItems.DAWN_CLEAVER) {
-					entity.setHealth(1.0F);
+					entity.setHealth(250.0F);
 					if (entity.getWorld() instanceof ServerWorld serverWorld) {
 						for (int i = 0; i < 20; i++) {
 							double offsetX = (entity.getWorld().random.nextDouble() - 0.5) * 2.0;
