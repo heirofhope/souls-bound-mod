@@ -7,6 +7,7 @@ import io.github.heirofhope.mechanized_souls.item.custom.DawnCleaverItem;
 import io.github.heirofhope.mechanized_souls.item.custom.KnightSpawnItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -46,6 +47,15 @@ public class ModItems {
 	public static final Item lemon = registeritem("lemon",
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ModItemGroup.FOX_TAB)));
 
+
+
+//	  Hour's Tomfoolery;
+
+
+	//This Item is a debug item, DO NOT DELETE!
+	public static final Item SUSSY_ITEM = registeritem("sussy_item",
+		new SwordItem(ModToolMaterials.FOXIUM, 9999,9999,
+			new QuiltItemSettings().group(ModItemGroup.HOUR_TAB)));
 
 
 
