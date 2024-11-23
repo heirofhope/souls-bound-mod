@@ -3,11 +3,13 @@ package io.github.heirofhope.mechanized_souls.Entity.custom;
 
 import io.github.heirofhope.mechanized_souls.Entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
@@ -21,8 +23,11 @@ import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -37,7 +42,7 @@ public class KnightEntity extends TameableEntity {
 	@Override
 	protected void initGoals() {
 		this.goalSelector.add(0, new SwimGoal(this));
-		this.goalSelector.add(1,new SitGoal(this));
+		this.goalSelector.add(1, new SitGoal(this));
 		this.goalSelector.add(2, new AttackWithOwnerGoal(this));
 		this.goalSelector.add(3, new MeleeAttackGoal(this, 1.0, true));
 
@@ -59,6 +64,27 @@ public class KnightEntity extends TameableEntity {
 	@Override
 	public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
 		return ModEntities.KNIGHT.create(world);
+	}
+
+
+	@Override
+	protected SoundEvent getAmbientSound() {
+		return SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP;
+	}
+
+	@Override
+	protected SoundEvent getHurtSound(DamageSource source) {
+		return SoundEvents.BLOCK_ANVIL_HIT;
+	}
+
+	@Override
+	protected SoundEvent getDeathSound() {
+		return SoundEvents.BLOCK_ANVIL_DESTROY;
+	}
+
+	@Override
+	protected void playStepSound(BlockPos pos, BlockState state) {
+		this.playSound(SoundEvents.ENTITY_IRON_GOLEM_STEP, 0.15f, 1.0f);
 	}
 
 
@@ -122,14 +148,14 @@ public class KnightEntity extends TameableEntity {
 			getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(80);
 			getAttributeInstance(EntityAttributes.GENERIC_ARMOR_TOUGHNESS).setBaseValue(40);
 			getAttributeInstance(EntityAttributes.GENERIC_ARMOR).setBaseValue(40);
-			getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(.1f);
+			getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(.24f);
 			getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(15);
 			getAttributeInstance(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE).setBaseValue(20);
 		} else {
 			getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(80);
 			getAttributeInstance(EntityAttributes.GENERIC_ARMOR_TOUGHNESS).setBaseValue(40);
 			getAttributeInstance(EntityAttributes.GENERIC_ARMOR).setBaseValue(40);
-			getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(.1f);
+			getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(.24f);
 			getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(15);
 			getAttributeInstance(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE).setBaseValue(20);
 		}
