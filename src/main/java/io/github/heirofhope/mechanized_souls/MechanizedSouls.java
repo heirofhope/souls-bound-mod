@@ -10,7 +10,7 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import software.bernie.geckolib3.GeckoLib;
 
 
 public class MechanizedSouls implements ModInitializer {
@@ -21,11 +21,14 @@ public class MechanizedSouls implements ModInitializer {
 
     @Override
     public void onInitialize(ModContainer mod) {
+
 	//	ModConfiguredFeatures.registerConfiguredFeature();
         LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 		ModItems.RegisterModItems();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
 		ModEffects.registerEffects();
 		BeforeDeathHandler.register();
+		GeckoLib.initialize();
+
     }
 }
