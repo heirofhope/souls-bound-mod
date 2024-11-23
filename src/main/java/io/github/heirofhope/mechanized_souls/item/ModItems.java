@@ -31,6 +31,7 @@ public class ModItems {
 //    Fox's Tomfoolery:
 
 
+
 	public static final Item DAWN_CLEAVER = registeritem("dawn_cleaver",
 		new DawnCleaverItem(ModToolMaterials.FOXIUM, 7,-3.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
@@ -50,6 +51,7 @@ public class ModItems {
 
 
 //	  Hour's Tomfoolery;
+
 
 
 	//This Item is a debug item, DO NOT DELETE!
