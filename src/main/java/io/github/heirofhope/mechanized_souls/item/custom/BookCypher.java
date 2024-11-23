@@ -1,11 +1,11 @@
 package io.github.heirofhope.mechanized_souls.item.custom;
 
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.screen.slot.Slot;
-import net.minecraft.util.ClickType;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.world.World;
 
 public class BookCypher extends Item {
 
@@ -14,10 +14,7 @@ public class BookCypher extends Item {
 	}
 
 	@Override
-	public boolean onClicked(ItemStack thisStack, ItemStack otherStack, Slot thisSlot, ClickType clickType, PlayerEntity player, StackReference cursorStackReference) {
-		
-
-
-		return super.onClicked(thisStack, otherStack, thisSlot, clickType, player, cursorStackReference);
+	public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+		return super.use(world, user, hand);
 	}
 }

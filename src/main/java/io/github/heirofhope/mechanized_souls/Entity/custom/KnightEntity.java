@@ -13,13 +13,11 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
-import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.server.world.ServerWorld;
@@ -44,7 +42,7 @@ public class KnightEntity extends TameableEntity {
 		this.goalSelector.add(0, new SwimGoal(this));
 		this.goalSelector.add(1, new SitGoal(this));
 		this.goalSelector.add(2, new AttackWithOwnerGoal(this));
-		this.goalSelector.add(3, new MeleeAttackGoal(this, 1.0, true));
+		this.goalSelector.add(3, new MeleeAttackGoal(this, 1.7, true));
 
 	}
 

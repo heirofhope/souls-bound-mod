@@ -17,7 +17,7 @@ public abstract class ModelLoaderMixin {
 	@Shadow
 	protected abstract void addModel(ModelIdentifier modelId);
 
-	// Inject code after the third invocation of 'addModel' during initialization
+	// Inject code after the third invocation of 'addModel' during initialization.
 	@Inject(
 		method = "<init>",
 		at = @At(
@@ -28,11 +28,10 @@ public abstract class ModelLoaderMixin {
 		)
 	)
 	public void addHandHeldModel(CallbackInfo ci) {
-		// Register the custom model for claymore
+		// Register the custom handheld model.
 		this.addModel(new ModelIdentifier(MechanizedSouls.MOD_ID, "book_cypher_held", "inventory"));
 
-
-
+		this.addModel(new ModelIdentifier(MechanizedSouls.MOD_ID, "dawn_cleaver_held", "inventory"));
 
 		}
 }
