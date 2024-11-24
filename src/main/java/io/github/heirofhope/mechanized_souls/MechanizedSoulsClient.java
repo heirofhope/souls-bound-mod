@@ -15,5 +15,6 @@ public class MechanizedSoulsClient implements ClientModInitializer {
 
 		EntityRendererRegistry.register(ModEntities.KNIGHT, KnightRenderer::new);
 		EntityModelLayerRegistry.registerModelLayer(ModModelLayers.KNIGHT, KnightModel::getTexturedModelData);
+
 	}
 }
