@@ -54,6 +54,16 @@ public class ModItems {
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ModItemGroup.FOX_TAB)));
 
 
+//	 Azura didn't knew were to add that so its here
+
+	public static final Item ECLIPSE_CLAYMORE = registeritem("eclipse_claymore",
+		new HalberdItem(ModToolMaterials.FERROCIUM, 5,-3.5f,
+			new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
+
+
+
+
+
 
 //	  Hour's Tomfoolery;
 
