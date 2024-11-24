@@ -14,4 +14,5 @@ public class ModEntities {
 		new Identifier(MechanizedSouls.MOD_ID, "knight"),
 		FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, KnightEntity:: new)
 			.dimensions(EntityDimensions.fixed(1.5f,2.25f)).build());
+
 }
