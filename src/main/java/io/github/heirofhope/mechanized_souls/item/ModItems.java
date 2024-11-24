@@ -37,6 +37,10 @@ public class ModItems {
 		new DawnCleaverItem(ModToolMaterials.FOXIUM, 7,-3.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
+	public static final Item SOUL_SCYTHE = registeritem("soul_scythe",
+		new SwordItem(ModToolMaterials.FOXIUM, 1,-2.0f,
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+
 	public static final Item book_cypher = registeritem("book_cypher",
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 

@@ -1,7 +1,7 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "mechanized_souls:item/halberd_held"
+		"layer0": "mechanized_souls:item/soul_scythe_held"
 	},
   "display": {
     "ground": {
@@ -46,8 +46,8 @@
       ],
       "translation": [
         0,
-        2,
-        1
+        10,
+        4
       ],
       "scale": [
         1.9,
@@ -63,8 +63,8 @@
       ],
       "translation": [
         0,
-        2,
-        1
+        10,
+        4
       ],
       "scale": [
         1.9,
@@ -79,9 +79,9 @@
         40
       ],
       "translation": [
-        1,
-        10,
-        0
+        2,
+        6,
+        2
       ],
       "scale": [
         1.6,
@@ -96,9 +96,9 @@
         -40
       ],
       "translation": [
-        0,
-        8,
-        1
+        2,
+        6,
+        2
       ],
       "scale": [
         1.6,
