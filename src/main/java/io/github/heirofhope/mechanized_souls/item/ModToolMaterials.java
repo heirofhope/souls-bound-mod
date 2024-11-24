@@ -9,7 +9,12 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-	FOXIUM(4, 1500, 5.0F, 7.0F, 10, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.FERROCIUM}));
+	FOXIUM(4, 1500, 5.0F,
+		7.0F, 10, () -> Ingredient.ofItems(
+			new ItemConvertible[]{ModItems.FERROCIUM})),
+	FERROCIUM(4, 2000, 9.0F,
+		4.0F, 15, () -> Ingredient.ofItems(
+			new ItemConvertible[]{ModItems.FERROCIUM}));
 
 	private final int miningLevel;
 	private final int itemDurability;

@@ -55,6 +55,12 @@ public abstract class ItemRendererMixin {
 				.getBakedModelManager()
 				.getModel(new ModelIdentifier("mechanized_souls:dawn_cleaver_held", "inventory"));
 		}
+		if (stack.isOf(ModItems.HALBERD) && renderMode != ModelTransformation.Mode.GUI) {
+			// Replace the model with a custom model
+			return MinecraftClient.getInstance()
+				.getBakedModelManager()
+				.getModel(new ModelIdentifier("mechanized_souls:halberd_held", "inventory"));
+		}
 		return value;
 	}
 }

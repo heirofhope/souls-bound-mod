@@ -1,10 +1,7 @@
 package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
-import io.github.heirofhope.mechanized_souls.item.custom.ClosedContractItem;
-import io.github.heirofhope.mechanized_souls.item.custom.ContractItem;
-import io.github.heirofhope.mechanized_souls.item.custom.DawnCleaverItem;
-import io.github.heirofhope.mechanized_souls.item.custom.KnightSpawnItem;
+import io.github.heirofhope.mechanized_souls.item.custom.*;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
@@ -21,6 +18,10 @@ public class ModItems {
 
 	public static final Item KNIGHT_SPAWNEGG = registeritem("knight_spawnegg",
 		new KnightSpawnItem(new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
+
+	public static final Item HALBERD = registeritem("halberd",
+		new HalberdItem(ModToolMaterials.FERROCIUM, 5,-3.5f,
+			new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
 
 	public static final Item soul_cookie = registeritem("soul_cookie",
 		new Item(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder()
