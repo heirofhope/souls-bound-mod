@@ -55,13 +55,7 @@ public class ModItems {
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ModItemGroup.FOX_TAB)));
 
 
-//	 Azura didn't knew were to add that so its here
-
-	public static final Item ECLIPSE_CLAYMORE = registeritem("eclipse_claymore",
-		new HalberdItem(ModToolMaterials.FERROCIUM, 5,-3.5f,
-			new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
-
-// Armor Tab - Aristu
+// Aristu's Tomfoolery
 
 	public static final Item FERROCIUM_HELMET = registeritem("ferrocium_helmet",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.HEAD,
@@ -81,12 +75,14 @@ public class ModItems {
 //	  Hour's Tomfoolery;
 
 
-
 	//This Item is a debug item, DO NOT DELETE!
 	public static final Item SUSSY_ITEM = registeritem("sussy_item",
 		new SwordItem(ModToolMaterials.FOXIUM, 9999,9999,
 			new QuiltItemSettings().group(ModItemGroup.HOUR_TAB)));
 
+	public static final Item ECLIPSE_CLAYMORE = registeritem("eclipse_claymore",
+		new HalberdItem(ModToolMaterials.FERROCIUM, 5,-3.5f,
+			new QuiltItemSettings().group(ModItemGroup.HOUR_TAB)));
 
 
 
