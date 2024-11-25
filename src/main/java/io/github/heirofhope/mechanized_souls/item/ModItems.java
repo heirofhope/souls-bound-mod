@@ -2,9 +2,10 @@ package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import io.github.heirofhope.mechanized_souls.item.custom.*;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.mixin.item.ArmorItemMixin;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -60,8 +61,20 @@ public class ModItems {
 		new HalberdItem(ModToolMaterials.FERROCIUM, 5,-3.5f,
 			new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
 
+// Armor Tab - Aristu
 
-
+	public static final Item FERROCIUM_HELMET = registeritem("ferrocium_helmet",
+		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.HEAD,
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+	public static final Item FERROCIUM_CHESTPLATE = registeritem("ferrocium_chestplate",
+		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.CHEST,
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+	public static final Item FERROCIUM_LEGGINGS = registeritem("ferrocium_leggings",
+		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.LEGS,
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+	public static final Item FERROCIUM_BOOTS = registeritem("ferrocium_boots",
+		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.FEET,
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 
 
