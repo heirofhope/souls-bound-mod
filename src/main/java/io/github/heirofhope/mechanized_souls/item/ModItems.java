@@ -2,8 +2,6 @@ package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import io.github.heirofhope.mechanized_souls.item.custom.*;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.mixin.item.ArmorItemMixin;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -39,7 +37,7 @@ public class ModItems {
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item SOUL_SCYTHE = registeritem("soul_scythe",
-		new SwordItem(ModToolMaterials.FOXIUM, 1,-2.0f,
+		new SwordItem(ModToolMaterials.FOXIUM, 0,-2.9f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",

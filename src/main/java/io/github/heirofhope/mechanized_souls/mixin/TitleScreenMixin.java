@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class TitleScreenMixin {
     @Inject(method = "init", at = @At("TAIL"))
     public void onInit(CallbackInfo ci) {
-        MechanizedSouls.LOGGER.info("This line is printed by an example mod mixin!");
+        MechanizedSouls.LOGGER.info("Squad: Spy, Scout, Sniper, Soldier...");
     }
 }
