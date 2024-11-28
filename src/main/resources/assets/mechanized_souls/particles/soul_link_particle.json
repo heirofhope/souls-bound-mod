@@ -1,0 +1,6 @@
+{
+  "textures": [
+    "mechanized_souls:particle/soul_link_particle_texture"
+  ],
+  "lifetime": 10
+}
