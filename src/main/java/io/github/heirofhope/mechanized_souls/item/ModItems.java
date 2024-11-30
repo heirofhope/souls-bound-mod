@@ -37,7 +37,7 @@ public class ModItems {
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item SOUL_SCYTHE = registeritem("soul_scythe",
-		new SwordItem(ModToolMaterials.FOXIUM, 0,-2.9f,
+		new SwordItem(ModToolMaterials.FOXIUM, 0,-1.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",
@@ -54,7 +54,7 @@ public class ModItems {
 
 
 // Aristu's Tomfoolery
-
+// why in the tarr fuck dose this exist it crashes when i put it on
 	public static final Item FERROCIUM_HELMET = registeritem("ferrocium_helmet",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.HEAD,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
