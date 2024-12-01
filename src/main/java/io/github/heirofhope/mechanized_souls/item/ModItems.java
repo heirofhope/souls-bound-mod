@@ -52,6 +52,8 @@ public class ModItems {
 	public static final Item lemon = registeritem("lemon",
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ModItemGroup.FOX_TAB)));
 
+	public static final Item recall_puppet = registeritem("recall_puppet",
+		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 // Aristu's Tomfoolery
 // why in the tarr fuck dose this exist it crashes when i put it on
