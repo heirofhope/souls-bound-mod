@@ -70,6 +70,8 @@ public class ModItems {
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.FEET,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
+	public static final Item soul_drain = registeritem("soul_drain",
+		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 
 //	  Hour's Tomfoolery;
@@ -86,8 +88,8 @@ public class ModItems {
 
 
 
-	private static Item registeritem(String name,Item item) {
-	return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), item);
+	private static Item registeritem(String name, Item DawncleaverItem) {
+	return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), DawncleaverItem);
 }
 
 	public  static  void RegisterModItems() {

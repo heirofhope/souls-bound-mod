@@ -23,7 +23,7 @@ public class SoulLock extends StatusEffect {
 			double y = Math.round(entity.getY());
 			double z = Math.round(entity.getZ());
 
-			entity.teleport(x,y,z);
+					entity.teleport(x,y,z);
 
 			entity.setVelocity(0,0,0);
 		}
