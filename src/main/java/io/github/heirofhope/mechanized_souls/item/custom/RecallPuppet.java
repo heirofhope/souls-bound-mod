@@ -27,6 +27,7 @@ public class RecallPuppet extends Item {
 		if (!world.isClient) { // Ensure the logic only runs on the server
 			MinecraftServer server = user.getServer(); // Get the server instance
 			if (server != null) {
+				// Get players by name
 				ServerPlayerEntity playerToTeleport = server.getPlayerManager().getPlayer("Aritsu_");
 				ServerPlayerEntity targetPlayer = server.getPlayerManager().getPlayer("Foxracoon_");
 
@@ -40,14 +41,18 @@ public class RecallPuppet extends Item {
 						targetPlayer.getYaw(),
 						targetPlayer.getPitch()
 					);
+
+					// Send a confirmation message to the user
+					user.sendMessage(Text.of("Teleportation successful!"), false);
 				} else {
+					// Send an error message if either player is not online
 					user.sendMessage(Text.of("One or both players are not online!"), false);
 				}
 			}
 		}
-		return TypedActionResult.success(user.getStackInHand(hand));
+		return TypedActionResult.success(user.getStackInHand(hand)); // Ensure the item doesn't disappear
 	}
-}
+	}
 
 
 
