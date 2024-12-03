@@ -33,15 +33,15 @@ public class ModItems {
 
 
 	public static final Item DAWN_CLEAVER = registeritem("dawn_cleaver",
-		new DawnCleaverItem(ModToolMaterials.FOXIUM, 7,-3.5f,
+		new DawnCleaverItem(ModToolMaterials.FOXIUM, 7,-3.75f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item SOUL_SCYTHE = registeritem("soul_scythe",
-		new SwordItem(ModToolMaterials.FOXIUM, 0,-1.5f,
+		new SwordItem(ModToolMaterials.FOXIUM, 0,-3.25f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",
-		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
+		new BookCypher(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 	public static final Item open_contract = registeritem("open_contract",
 		new ContractItem(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
@@ -55,26 +55,27 @@ public class ModItems {
 	public static final Item recall_puppet = registeritem("recall_puppet",
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
-// Aristu's Tomfoolery
+// Aristu's Tomfoolery:
 // why in the tarr fuck dose this exist it crashes when i put it on
+
 	public static final Item FERROCIUM_HELMET = registeritem("ferrocium_helmet",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.HEAD,
-			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
 	public static final Item FERROCIUM_CHESTPLATE = registeritem("ferrocium_chestplate",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.CHEST,
-			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
 	public static final Item FERROCIUM_LEGGINGS = registeritem("ferrocium_leggings",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.LEGS,
-			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
 	public static final Item FERROCIUM_BOOTS = registeritem("ferrocium_boots",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.FEET,
-			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
 
 	public static final Item soul_drain = registeritem("soul_drain",
-		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
+		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.ARITSU_TAB)));
 
 
-//	  Hour's Tomfoolery;
+//	  Hour's Tomfoolery:
 
 
 	//This Item is a debug item, DO NOT DELETE!

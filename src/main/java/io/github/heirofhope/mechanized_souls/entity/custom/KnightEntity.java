@@ -28,6 +28,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -87,12 +88,12 @@ public class KnightEntity extends TameableEntity implements IAnimatable {
 
 	@Override
 	protected SoundEvent getAmbientSound() {
-		return SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP;
+		return SoundEvents.ENTITY_IRON_GOLEM_STEP;
 	}
 
 	@Override
 	protected SoundEvent getHurtSound(DamageSource source) {
-		return SoundEvents.BLOCK_ANVIL_HIT;
+		return SoundEvents.ENTITY_IRON_GOLEM_REPAIR;
 	}
 
 	@Override
@@ -204,21 +205,40 @@ public class KnightEntity extends TameableEntity implements IAnimatable {
 
 
 	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-		if (this.isAnimating) {
+		if (event.isMoving()) {
 			event.getController()
-				.setAnimation(new AnimationBuilder().addAnimation("animation.fer_golem.idle_notafterthatgyatt", ILoopType.EDefaultLoopTypes.LOOP)
-					.addAnimation("animation.fer_golem.walk", ILoopType.EDefaultLoopTypes.LOOP));
-		} else {
-			event.getController().clearAnimationCache();
-			return PlayState.STOP;
-		}
+				.setAnimation(new AnimationBuilder()
+					.addAnimation("animation.fer_golem.walk",
+						ILoopType.EDefaultLoopTypes.LOOP));
+			return PlayState.CONTINUE;
+			}
+		event.getController()
+			.setAnimation(new AnimationBuilder()
+				.addAnimation("animation.fer_golem.idle_notafterthatgyatt",
+					ILoopType.EDefaultLoopTypes.LOOP));
 		return PlayState.CONTINUE;
+
 	}
 
 	@Override
 	public void registerControllers(AnimationData animationData) {
 		animationData.addAnimationController(new AnimationController(this,"controller",
 			0,this::predicate));
+
+		animationData.addAnimationController(new AnimationController(this,"attackController",
+			0,this::attackPredicate));
+	}
+
+	private PlayState attackPredicate(AnimationEvent event) {
+		if (this.handSwinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
+			event.getController().markNeedsReload();
+			event.getController()
+				.setAnimation(new AnimationBuilder()
+					.addAnimation("animation.fer_golem.attack_sword_updown",
+						ILoopType.EDefaultLoopTypes.PLAY_ONCE));
+			this.handSwinging = false;
+		}
+		return PlayState.CONTINUE;
 	}
 
 	@Override

@@ -21,27 +21,15 @@ import java.util.List;
 
 @Mixin(ItemRenderer.class)
 public abstract class ItemRendererMixin {
-	@Shadow
-	private void renderBakedItemQuads(MatrixStack matrices, VertexConsumer vertices, List<BakedQuad> quads, ItemStack stack, int light, int overlay) {
-	}
-
-	@Unique
-	private static final Object BOOK_CYPHER = renderBakedItemQuads();
-
-	@Unique
-	private static final Object dawn_cleaver = renderBakedItemQuads();
-
-	@Unique
-	private static Object renderBakedItemQuads() {
-		return null;
-	}
 
 	@ModifyVariable(
 		method = "renderItem",
 		at = @At(value = "HEAD"),
 		argsOnly = true
 	)
-	public BakedModel useHandHeldModel(BakedModel value, ItemStack stack, ModelTransformation.Mode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
+	public BakedModel useHandHeldModel(BakedModel value, ItemStack stack, ModelTransformation.Mode renderMode,
+									   boolean leftHanded, MatrixStack matrices, VertexConsumerProvider
+											   vertexConsumers, int light, int overlay) {
 		if (stack.isOf(ModItems.book_cypher) && renderMode != ModelTransformation.Mode.GUI) {
 			return MinecraftClient.getInstance()
 				.getBakedModelManager()
