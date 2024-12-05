@@ -1,15 +1,25 @@
 package io.github.heirofhope.mechanized_souls.item.custom;
 
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.util.ActionResult;
+import io.github.heirofhope.mechanized_souls.entity.custom.ChainEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.*;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.stat.Stats;
+import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.World;
 
-public class SoulDrainItem extends SwordItem {
+import static io.github.heirofhope.mechanized_souls.entity.custom.mechanized_souls.ModID;
 
-	public SoulDrainItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings ) {
+public class SoulDrainItem extends AxeItem {
+
+	public SoulDrainItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
 		super(toolMaterial, attackDamage, attackSpeed, settings);
-
-
 	}
 }
+
+
+
