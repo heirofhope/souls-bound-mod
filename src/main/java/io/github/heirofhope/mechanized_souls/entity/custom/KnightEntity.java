@@ -1,8 +1,10 @@
 package io.github.heirofhope.mechanized_souls.entity.custom;
 
+
 import io.github.heirofhope.mechanized_souls.entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -14,7 +16,10 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtHelper;
 import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
@@ -28,23 +33,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import software.bernie.geckolib3.core.IAnimatable;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.builder.ILoopType;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.util.GeckoLibUtil;
 
 import java.util.Optional;
 
-public class KnightEntity extends TameableEntity implements IAnimatable {
-
-	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
-	private boolean isAnimating = true;
-
+public class KnightEntity extends TameableEntity {
 	protected static final TrackedData<Boolean> DORMANT = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 	public static final TrackedData<Optional<BlockPos>> DORMANT_POS = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.OPTIONAL_BLOCK_POS);
 
@@ -200,30 +192,6 @@ public class KnightEntity extends TameableEntity implements IAnimatable {
 	protected void initDataTracker() {
 		super.initDataTracker();
 		this.dataTracker.startTracking(SITTING, false);
-	}
-
-
-	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-		if (this.isAnimating) {
-			event.getController()
-				.setAnimation(new AnimationBuilder().addAnimation("animation.fer_golem.idle_notafterthatgyatt", ILoopType.EDefaultLoopTypes.LOOP)
-					.addAnimation("animation.fer_golem.walk", ILoopType.EDefaultLoopTypes.LOOP));
-		} else {
-			event.getController().clearAnimationCache();
-			return PlayState.STOP;
-		}
-		return PlayState.CONTINUE;
-	}
-
-	@Override
-	public void registerControllers(AnimationData animationData) {
-		animationData.addAnimationController(new AnimationController(this,"controller",
-			0,this::predicate));
-	}
-
-	@Override
-	public AnimationFactory getFactory() {
-		return factory;
 	}
 }
 

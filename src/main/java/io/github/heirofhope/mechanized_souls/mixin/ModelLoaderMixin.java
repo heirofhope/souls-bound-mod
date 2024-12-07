@@ -34,6 +34,5 @@ public abstract class ModelLoaderMixin {
 		this.addModel(new ModelIdentifier(MechanizedSouls.MOD_ID, "halberd_held", "inventory"));
 		this.addModel(new ModelIdentifier(MechanizedSouls.MOD_ID, "soul_scythe_held", "inventory"));
 		this.addModel(new ModelIdentifier(MechanizedSouls.MOD_ID, "eclipse_claymore_held", "inventory"));
-		this.addModel(new ModelIdentifier(MechanizedSouls.MOD_ID, "rock_sword_held", "inventory"));
 		}
 }

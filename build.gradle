@@ -12,11 +12,6 @@ group = project.maven_group
 
 repositories {
 
-	maven {
-		name = 'GeckoLib'
-		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-	}
-
 
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -52,8 +47,6 @@ dependencies {
 	}
 	*/
 	modImplementation libs.quilt.loader
-
-	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.40'
 
 
 	// QSL is not a complete API; You will need Quilted Fabric API to fill in the gaps.

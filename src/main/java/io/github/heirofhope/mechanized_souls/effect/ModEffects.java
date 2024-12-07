@@ -21,4 +21,5 @@ public class ModEffects {
 	public static void registerEffects() {
 		SOULLOCK = registerStatusEffect("soullock");
 	}
+
 }

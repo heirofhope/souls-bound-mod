@@ -19,11 +19,11 @@ public class SoulLock extends StatusEffect {
 	public void applyUpdateEffect(LivingEntity entity, int amplifier) {
 		if (!entity.getWorld().isClient) {
 
-			double x = 0.1 * Math.round(entity.getX() * 10);
-			double y = 0.1 * Math.round(entity.getY() * 10);
-			double z = 0.1 * Math.round(entity.getZ() * 10);
+			double x = Math.round(entity.getX());
+			double y = Math.round(entity.getY());
+			double z = Math.round(entity.getZ());
 
-					entity.teleport(x,y,z);
+			entity.teleport(x,y,z);
 
 			entity.setVelocity(0,0,0);
 		}

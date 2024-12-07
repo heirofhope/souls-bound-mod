@@ -2,6 +2,8 @@ package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import io.github.heirofhope.mechanized_souls.item.custom.*;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.mixin.item.ArmorItemMixin;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -33,19 +35,15 @@ public class ModItems {
 
 
 	public static final Item DAWN_CLEAVER = registeritem("dawn_cleaver",
-		new DawnCleaverItem(ModToolMaterials.FOXIUM, 6,-3.75f,
-			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
-
-	public static final Item ROCK_SWORD = registeritem("rock_sword",
-		new DawnCleaverItem(ModToolMaterials.FOXIUM, 0,-2.5f,
+		new DawnCleaverItem(ModToolMaterials.FOXIUM, 7,-3.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item SOUL_SCYTHE = registeritem("soul_scythe",
-		new SwordItem(ModToolMaterials.FOXIUM, 0,-3.50f,
+		new SwordItem(ModToolMaterials.FOXIUM, 1,-2.0f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",
-		new BookCypher(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
+		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 	public static final Item open_contract = registeritem("open_contract",
 		new ContractItem(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
@@ -56,29 +54,25 @@ public class ModItems {
 	public static final Item lemon = registeritem("lemon",
 		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ModItemGroup.FOX_TAB)));
 
-	public static final Item recall_puppet = registeritem("recall_puppet",
-		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
-// Aristu's Tomfoolery:
+// Aristu's Tomfoolery
 
 	public static final Item FERROCIUM_HELMET = registeritem("ferrocium_helmet",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.HEAD,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 	public static final Item FERROCIUM_CHESTPLATE = registeritem("ferrocium_chestplate",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.CHEST,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 	public static final Item FERROCIUM_LEGGINGS = registeritem("ferrocium_leggings",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.LEGS,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 	public static final Item FERROCIUM_BOOTS = registeritem("ferrocium_boots",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.FEET,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
-
-	public static final Item soul_drain = registeritem("soul_drain",
-		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.ARITSU_TAB)));
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 
-//	  Hour's Tomfoolery:
+
+//	  Hour's Tomfoolery;
 
 
 	//This Item is a debug item, DO NOT DELETE!
@@ -92,8 +86,8 @@ public class ModItems {
 
 
 
-	private static Item registeritem(String name, Item DawncleaverItem) {
-	return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), DawncleaverItem);
+	private static Item registeritem(String name,Item item) {
+	return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), item);
 }
 
 	public  static  void RegisterModItems() {
