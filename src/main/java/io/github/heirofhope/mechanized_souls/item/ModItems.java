@@ -33,11 +33,15 @@ public class ModItems {
 
 
 	public static final Item DAWN_CLEAVER = registeritem("dawn_cleaver",
-		new DawnCleaverItem(ModToolMaterials.FOXIUM, 7,-3.75f,
+		new DawnCleaverItem(ModToolMaterials.FOXIUM, 6,-3.75f,
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+
+	public static final Item ROCK_SWORD = registeritem("rock_sword",
+		new DawnCleaverItem(ModToolMaterials.FOXIUM, 0,-2.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item SOUL_SCYTHE = registeritem("soul_scythe",
-		new SwordItem(ModToolMaterials.FOXIUM, 0,-3.25f,
+		new SwordItem(ModToolMaterials.FOXIUM, 0,-3.50f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",
@@ -56,7 +60,6 @@ public class ModItems {
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 // Aristu's Tomfoolery:
-// why in the tarr fuck dose this exist it crashes when i put it on
 
 	public static final Item FERROCIUM_HELMET = registeritem("ferrocium_helmet",
 		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.HEAD,

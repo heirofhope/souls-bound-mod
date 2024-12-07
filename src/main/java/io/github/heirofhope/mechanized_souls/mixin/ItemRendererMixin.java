@@ -1,19 +1,15 @@
 package io.github.heirofhope.mechanized_souls.mixin;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.render.model.BakedModel;
-import net.minecraft.client.render.model.BakedQuad;
 import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
@@ -39,6 +35,11 @@ public abstract class ItemRendererMixin {
 			return MinecraftClient.getInstance()
 				.getBakedModelManager()
 				.getModel(new ModelIdentifier("mechanized_souls:dawn_cleaver_held", "inventory"));
+		}
+		if (stack.isOf(ModItems.ROCK_SWORD) && renderMode != ModelTransformation.Mode.GUI) {
+			return MinecraftClient.getInstance()
+				.getBakedModelManager()
+				.getModel(new ModelIdentifier("mechanized_souls:rock_sword_held", "inventory"));
 		}
 		if (stack.isOf(ModItems.HALBERD) && renderMode != ModelTransformation.Mode.GUI) {
 			return MinecraftClient.getInstance()
