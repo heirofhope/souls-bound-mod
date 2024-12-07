@@ -18,31 +18,13 @@ public class MechanizedSouls implements ModInitializer {
 
 
 
-    @Override
+	@Override
     public void onInitialize(ModContainer mod) {
 
-<<<<<<< HEAD
 	//	ModConfiguredFeatures.registerConfiguredFeature();
-=======
-		//	ModConfiguredFeatures.registerConfiguredFeature();
-		LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
-
-		//Particle registration
-		Registry.register(Registry.PARTICLE_TYPE, new Identifier(MOD_ID, "soul_link_particle"), SOUL_LINK_PARTICLE);
-
-
-
-
-		//Classes registrations
-		ScytheChainLauncher.register();
->>>>>>> parent of e9b198a (Merge branch 'main' into ParticleScytheStringTest)
 		ModItems.RegisterModItems();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
-<<<<<<< HEAD
 
-=======
-		ScytheStringRenderer.register();
->>>>>>> parent of e9b198a (Merge branch 'main' into ParticleScytheStringTest)
 		ModEffects.registerEffects();
 		BeforeDeathHandler.register();
 

@@ -19,4 +19,3 @@ public class ClosedContractItem extends WrittenBookItem {
 		return super.getName(stack);
 	}
 }
-
