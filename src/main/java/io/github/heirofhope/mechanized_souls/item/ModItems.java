@@ -36,7 +36,7 @@ public class ModItems {
 		new DawnCleaverItem(ModToolMaterials.FOXIUM, 6,-3.75f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
-	public static final Item ferrocium_box_cutter = registeritem("ferrocium_box_cutter",
+	public static final Item ferrocium_box_cutter = registeritem("rock_sword",
 		new DawnCleaverItem(ModToolMaterials.FOXIUM, 0,-2.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
