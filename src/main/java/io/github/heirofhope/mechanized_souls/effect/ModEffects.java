@@ -20,5 +20,4 @@ public class ModEffects {
 		SOULLOCK = registerStatusEffect("soullock", new SoulLock(StatusEffectType.HARMFUL, 312462));
 		CHAINLOCK = registerStatusEffect("chainlock", new ChainLock(StatusEffectType.HARMFUL, 312462));
 	}
-
 }

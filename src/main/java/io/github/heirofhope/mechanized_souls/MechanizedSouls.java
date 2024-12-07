@@ -25,8 +25,9 @@ public class MechanizedSouls implements ModInitializer {
 	public static final DefaultParticleType SOUL_LINK_PARTICLE = FabricParticleTypes.simple();
 
 
-    @Override
+	@Override
     public void onInitialize(ModContainer mod) {
+
 
 		//	ModConfiguredFeatures.registerConfiguredFeature();
 		LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
@@ -39,10 +40,16 @@ public class MechanizedSouls implements ModInitializer {
 
 		//Classes registrations
 		ScytheChainLauncher.register();
+
+	//	ModConfiguredFeatures.registerConfiguredFeature();
+
 		ModItems.RegisterModItems();
 		ScytheChainMain.register();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
+
 		ScytheStringRenderer.register();
+
+
 		ModEffects.registerEffects();
 		BeforeDeathHandler.register();
 
