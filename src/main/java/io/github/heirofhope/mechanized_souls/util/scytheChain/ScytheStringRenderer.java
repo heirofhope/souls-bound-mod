@@ -1,4 +1,4 @@
-package io.github.heirofhope.mechanized_souls.util;
+package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.player.PlayerEntity;

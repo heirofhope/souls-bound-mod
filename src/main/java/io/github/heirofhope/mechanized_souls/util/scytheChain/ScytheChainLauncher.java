@@ -1,4 +1,4 @@
-package io.github.heirofhope.mechanized_souls.util;
+package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
 //===============[ Imports ]=================
 
@@ -7,14 +7,13 @@ import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
-import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.github.heirofhope.mechanized_souls.util.ScytheChainMain;
+
 import java.util.HashSet;
 import java.util.Set;
 

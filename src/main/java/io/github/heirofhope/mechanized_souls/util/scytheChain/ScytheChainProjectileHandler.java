@@ -1,4 +1,4 @@
-package io.github.heirofhope.mechanized_souls.util;
+package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
 //===============[ Imports ]=================
 import net.minecraft.entity.Entity;
@@ -18,7 +18,7 @@ public class ScytheChainProjectileHandler {
 
 		// Chain behavior configssss (pweasee if you can you not fix all ortografy mistakes? They're cute...)
 		double ChainProjectileHitboxSize = 0.5; // hmmmmm The actual size is doubled so.... Yeaaaahhhh
-		double ChainGravity = -0.00; //I like -0.005....
+		double ChainGravity = -0.007; //I like -0.005....
 
 
 		// Iterate in reverse to avoid index issues during removal yipeeee that worked somehow?

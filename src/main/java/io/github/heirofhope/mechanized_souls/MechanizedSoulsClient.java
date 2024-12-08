@@ -21,7 +21,7 @@ public class MechanizedSoulsClient implements ClientModInitializer {
 
 		//Knight
 		EntityRendererRegistry.register(ModEntities.KNIGHT, KnightRenderer::new);
-		//DO NOT FUCKING TOUCH THIS IF YOU ARENT 100% SURE YOU ARE NOT GONNA FUCK EVRYTHING UP
+		//DO NOT [censored] TOUCH THIS IF YOU ARENT 100% SURE YOU ARE NOT GONNA TO [censored] EVRYTHING UP
 		// AND LEAVE IT TO HOUR TO SORT OUT IN THE MIDDLE OF THE NIGHT, Please.
 		// -Hour
 	}

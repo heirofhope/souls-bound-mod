@@ -1,4 +1,4 @@
-package io.github.heirofhope.mechanized_souls.util;
+package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
 //===============[ Imports ]=================
 import io.github.heirofhope.mechanized_souls.item.ModItems;

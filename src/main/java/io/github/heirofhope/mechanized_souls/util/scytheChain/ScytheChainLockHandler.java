@@ -1,6 +1,5 @@
-package io.github.heirofhope.mechanized_souls.util;
+package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
-import it.unimi.dsi.fastutil.longs.Long2ObjectOpenCustomHashMap;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
@@ -8,7 +7,7 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.github.heirofhope.mechanized_souls.util.ScytheChainMain;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -21,9 +20,11 @@ public class ScytheChainLockHandler {
 			for (Entity entity : entitiesAtPosition) {
 				if (entity.getUuid().equals(chainedEntity)) {
 
-
+					//chain configurations
 					double ChainLenght = 5;
 					double MaxPullSpeed = 1;
+
+					//...
 					double Xpos = entity.getX();
 					double Ypos = entity.getY();
 					double Zpos = entity.getZ();
@@ -47,7 +48,7 @@ public class ScytheChainLockHandler {
 
 					double horizontalAngle = Math.atan2(deltaZ, deltaX); // Rotation on XZ plane
 					double verticalAngle = Math.asin(deltaY / distance); // Elevation angle
-					double correctionFactor = Math.max(MaxPullSpeed, 0.5 * (distance - ChainLenght));
+					double correctionFactor = Math.max(MaxPullSpeed, 0.3 * (distance - ChainLenght));
 					double xCorrection = Math.cos(horizontalAngle) * correctionFactor;
 					double yCorrection = Math.sin(verticalAngle) * correctionFactor;
 					double zCorrection = Math.sin(horizontalAngle) * correctionFactor;
