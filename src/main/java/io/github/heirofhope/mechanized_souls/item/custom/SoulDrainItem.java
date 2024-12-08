@@ -1,15 +1,13 @@
 package io.github.heirofhope.mechanized_souls.item.custom;
 
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.util.ActionResult;
+import net.minecraft.item.*;
 
-public class SoulDrainItem extends SwordItem {
+public class SoulDrainItem extends AxeItem {
 
-	public SoulDrainItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings ) {
+	public SoulDrainItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
 		super(toolMaterial, attackDamage, attackSpeed, settings);
-
-
 	}
 }
+
+
+

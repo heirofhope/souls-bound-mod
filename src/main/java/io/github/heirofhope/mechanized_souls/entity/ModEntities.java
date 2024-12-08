@@ -15,4 +15,4 @@ public class ModEntities {
 		FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, KnightEntity::new)
 			.dimensions(EntityDimensions.fixed(1.5f,2.25f)).build());
 
-}
+	}

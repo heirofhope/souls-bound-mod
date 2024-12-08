@@ -1,2 +1,4 @@
 # Souls-Bound
-A Mod That has 2 mods in it, I know, crazy.
+A small collection of mini mods all centered around souls.
+Main mod: Mechanized Souls
+Add ons labeled with "(name)'s tomfoolery"

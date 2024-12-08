@@ -18,13 +18,13 @@ public class MechanizedSouls implements ModInitializer {
 
 
 
-    @Override
+	@Override
     public void onInitialize(ModContainer mod) {
 
 	//	ModConfiguredFeatures.registerConfiguredFeature();
-        LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 		ModItems.RegisterModItems();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
+
 		ModEffects.registerEffects();
 		BeforeDeathHandler.register();
 
