@@ -32,3 +32,4 @@ workspace/
 
 # macOS
 *.DS_Store
+src/main/java/io/github/heirofhope/mechanized_souls/util/QuadRenderer.java
