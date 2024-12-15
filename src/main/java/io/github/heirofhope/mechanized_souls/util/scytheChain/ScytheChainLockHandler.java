@@ -1,5 +1,6 @@
 package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
+import io.github.heirofhope.mechanized_souls.particle.ModParticles;
 import net.minecraft.entity.Entity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
@@ -73,7 +74,7 @@ public class ScytheChainLockHandler {
 						double yOffset = Math.abs( i - 45 )/45;
 
 						world.spawnParticles(
-							ParticleTypes.ELECTRIC_SPARK,
+							ModParticles.SCYTHE_CHAIN_PARTICLE,
 							targetPos.getX() - i * ChainStepSize.getX(),
 							yOffset + 1.5 + targetPos.getY() - i * ChainStepSize.getY(),
 							targetPos.getZ() - i * ChainStepSize.getZ(),

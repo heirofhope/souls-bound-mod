@@ -60,6 +60,11 @@ dependencies {
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation libs.bundles.quilted.fabric.api
 	// modImplementation libs.bundles.quilted.fabric.api.deprecated // If you wish to use Fabric APIs deprecated modules, you can replace the above line with this one
+
+	//Azura's adding a dependencie to work with renderization (〃＾▽＾〃)
+	modImplementation 'org.joml:joml:1.10.4'
+	include 'org.joml:joml:1.10.4'
+
 }
 
 processResources {

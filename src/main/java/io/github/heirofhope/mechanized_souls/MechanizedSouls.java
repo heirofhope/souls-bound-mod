@@ -4,6 +4,7 @@ import io.github.heirofhope.mechanized_souls.effect.ModEffects;
 import io.github.heirofhope.mechanized_souls.entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
+import io.github.heirofhope.mechanized_souls.particle.ModParticles;
 import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheChainLauncher;
 import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheChainMain;
 import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheStringRenderer;
@@ -33,7 +34,7 @@ public class MechanizedSouls implements ModInitializer {
 		LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
 
 		//Particle registration
-		Registry.register(Registry.PARTICLE_TYPE, new Identifier(MOD_ID, "soul_link_particle"), SOUL_LINK_PARTICLE);
+		ModParticles.registerParticles();
 
 
 

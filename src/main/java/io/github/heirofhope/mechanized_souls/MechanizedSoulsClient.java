@@ -4,6 +4,8 @@ import io.github.heirofhope.mechanized_souls.entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.entity.client.KnightRenderer;
 
 //import io.github.heirofhope.mechanized_souls.entity.client.ModModelLayers;
+import io.github.heirofhope.mechanized_souls.particle.ModParticles;
+import io.github.heirofhope.mechanized_souls.particle.custom.ScytheChainParticle;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.particle.RainSplashParticle;
@@ -17,7 +19,7 @@ public class MechanizedSoulsClient implements ClientModInitializer {
 	public void onInitializeClient(ModContainer mod) {
 
 		//Particles
-		ParticleFactoryRegistry.getInstance().register(MechanizedSouls.SOUL_LINK_PARTICLE, RainSplashParticle.Factory::new);
+		ParticleFactoryRegistry.getInstance().register(ModParticles.SCYTHE_CHAIN_PARTICLE, ScytheChainParticle.Factory::new);
 
 		//Knight
 		EntityRendererRegistry.register(ModEntities.KNIGHT, KnightRenderer::new);
