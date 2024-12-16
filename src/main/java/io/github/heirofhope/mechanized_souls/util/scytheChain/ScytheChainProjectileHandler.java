@@ -2,7 +2,7 @@ package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
 //===============[ Imports ]=================
 import io.github.heirofhope.mechanized_souls.particle.ModParticles;
-import io.github.heirofhope.mechanized_souls.util.RenderChain;
+import io.github.heirofhope.mechanized_souls.util.AzuraParticleRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Box;
@@ -17,7 +17,7 @@ public class ScytheChainProjectileHandler {
 
 		// Chain behavior configssss (pweasee if you can you not fix all ortografy mistakes? They're cute...)
 		double ChainProjectileHitboxSize = 0.5; // hmmmmm The actual size is doubled so.... Yeaaaahhhh
-		double ChainGravity = -0.007; // I like -0.005....
+		double ChainGravity = -0.00; // I like -0.005....
 
 		// Iterate in reverse to avoid index issues during removal yipeeee that worked somehow? mewoooo
 		for (int i = particlePositions.size() - 1; i >= 0; i--) {
@@ -81,7 +81,7 @@ public class ScytheChainProjectileHandler {
 
 				for (Entity entity : lookingForOwner) {
 					if (entity.getUuid().equals(owner)) {
-						RenderChain.render(world,entity.getPos(),position);
+						AzuraParticleRenderer.renderLine(world,entity.getPos(),position, ModParticles.SCYTHE_CHAIN_PARTICLE_1);
 					}
 				}
 
@@ -97,21 +97,5 @@ public class ScytheChainProjectileHandler {
 				projectileOwners.remove(i);
 			}
 		}
-	}
-
-
-
-	public static Vec3d rotateAroundAxis(Vec3d vector, Vec3d axis, double angleDegrees) {
-		Vec3d normalizedAxis = axis.normalize();
-		double cosTheta = Math.cos(Math.toRadians(angleDegrees));
-		double sinTheta = Math.sin(Math.toRadians(angleDegrees));
-
-		Vec3d parallelComponent = normalizedAxis.multiply(vector.dotProduct(normalizedAxis));
-		Vec3d perpendicularComponent = vector.subtract(parallelComponent);
-		Vec3d crossProductComponent = normalizedAxis.crossProduct(vector);
-
-		return parallelComponent
-			.add(perpendicularComponent.multiply(cosTheta))
-			.add(crossProductComponent.multiply(sinTheta));
 	}
 }

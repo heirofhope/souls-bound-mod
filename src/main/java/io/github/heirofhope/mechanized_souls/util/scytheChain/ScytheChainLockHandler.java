@@ -1,7 +1,7 @@
 package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
 import io.github.heirofhope.mechanized_souls.particle.ModParticles;
-import io.github.heirofhope.mechanized_souls.util.RenderChain;
+import io.github.heirofhope.mechanized_souls.util.AzuraParticleRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Box;
@@ -62,9 +62,8 @@ public class ScytheChainLockHandler {
 				}
 
 				//=====================[CODE TO MAKE THE VISUALS]=====================//
-				RenderChain.render(world,entity.getPos().add(new Vec3d(0,1,0)),playerPos.add(new Vec3d(0,1,0)));
-
-			}
+				AzuraParticleRenderer.renderChain(world,entity.getPos().add(new Vec3d(0,1,0)),playerPos.add(new Vec3d(0,1,0)), ModParticles.SCYTHE_CHAIN_PARTICLE_1, ModParticles.SCYTHE_CHAIN_PARTICLE_2);
+				}
 		}
 	}
 

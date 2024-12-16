@@ -38,7 +38,8 @@ public class BeforeDeathHandler {
 							);
 						}
 					}
-					entity.addStatusEffect(new StatusEffectInstance(ModEffects.SOULLOCK, 6000));
+					entity.addStatusEffect(new StatusEffectInstance(ModEffects.SOULLOCK, 6000, 0, false, false));
+
 				}
 			}
 		});

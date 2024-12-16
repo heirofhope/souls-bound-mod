@@ -7,13 +7,10 @@ import io.github.heirofhope.mechanized_souls.item.ModItems;
 import io.github.heirofhope.mechanized_souls.particle.ModParticles;
 import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheChainLauncher;
 import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheChainMain;
-import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheStringRenderer;
 import io.github.heirofhope.mechanized_souls.util.BeforeDeathHandler;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.particle.DefaultParticleType;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -47,8 +44,6 @@ public class MechanizedSouls implements ModInitializer {
 		ModItems.RegisterModItems();
 		ScytheChainMain.register();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
-
-		ScytheStringRenderer.register();
 
 
 		ModEffects.registerEffects();
