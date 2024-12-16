@@ -58,5 +58,6 @@ public class ScytheStringRenderer {
 			Z = Z - (BASE_POSITION.getZ() - Zplayer) / 60;
 		}
 	}
+
 }
 

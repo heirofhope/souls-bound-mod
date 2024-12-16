@@ -11,12 +11,12 @@ public class ScytheChainParticle extends SpriteBillboardParticle {
 							  SpriteProvider spriteSet, double xd, double yd, double zd) {
 		super(level, xCoord, yCoord, zCoord, xd, yd, zd);
 
-		this.velocityMultiplier = 0.0F;
-		this.x = xd;
-		this.y = yd;
-		this.z = zd;
-		this.scale *= 0.75F;
-		this.maxAge = 2;
+		this.velocityMultiplier = 1F;
+		this.x = xCoord;
+		this.y = yCoord;
+		this.z = zCoord;
+		this.scale = 0.035f;
+		this.maxAge = 1;
 		this.setSpriteForAge(spriteSet);
 
 //		this.red = 1f;
@@ -27,12 +27,10 @@ public class ScytheChainParticle extends SpriteBillboardParticle {
 	@Override
 	public void tick() {
 		super.tick();
-		fadeOut();
+		this.markDead(); // Ensures the particle is removed
 	}
 
-	private void fadeOut() {
-//		this.alpha = (-(1/(float)maxAge) * age + 1);
-	}
+
 
 	@Override
 	public ParticleTextureSheet getType() {
@@ -49,7 +47,7 @@ public class ScytheChainParticle extends SpriteBillboardParticle {
 
 		public Particle createParticle(DefaultParticleType particleType, ClientWorld level, double x, double y, double z,
 									   double dx, double dy, double dz) {
-			return new ScytheChainParticle(level, x, y, z, this.sprites, dx, dy, dz);
+			return new ScytheChainParticle(level, x, y, z, this.sprites, 0, 0, 0);
 		}
 	}
 }

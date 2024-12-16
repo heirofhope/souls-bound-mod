@@ -8,7 +8,6 @@ import io.github.heirofhope.mechanized_souls.particle.ModParticles;
 import io.github.heirofhope.mechanized_souls.particle.custom.ScytheChainParticle;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.particle.RainSplashParticle;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 
@@ -19,7 +18,8 @@ public class MechanizedSoulsClient implements ClientModInitializer {
 	public void onInitializeClient(ModContainer mod) {
 
 		//Particles
-		ParticleFactoryRegistry.getInstance().register(ModParticles.SCYTHE_CHAIN_PARTICLE, ScytheChainParticle.Factory::new);
+		ParticleFactoryRegistry.getInstance().register(ModParticles.SCYTHE_CHAIN_PARTICLE_1, ScytheChainParticle.Factory::new);
+		ParticleFactoryRegistry.getInstance().register(ModParticles.SCYTHE_CHAIN_PARTICLE_2, ScytheChainParticle.Factory::new);
 
 		//Knight
 		EntityRendererRegistry.register(ModEntities.KNIGHT, KnightRenderer::new);
