@@ -25,17 +25,17 @@ public class BeforeDeathHandler {
 							double offsetX = (entity.getWorld().random.nextDouble() - 0.5) * 2.0;
 							double offsetY = entity.getWorld().random.nextDouble() * 1.5;
 							double offsetZ = (entity.getWorld().random.nextDouble() - 0.5) * 2.0;
-							serverWorld.spawnParticles(
-								ParticleTypes.END_ROD,
-								entity.getX(),
-								entity.getY() + 0.5,
-								entity.getZ(),
-								10,
-								offsetX,
-								offsetY,
-								offsetZ,
-								0.1
-							);
+//							serverWorld.spawnParticles(
+//								ParticleTypes.END_ROD,
+//								entity.getX(),
+//								entity.getY() + 0.5,
+//								entity.getZ(),
+//								10,
+//								offsetX,
+//								offsetY,
+//								offsetZ,
+//								0.1
+//							);
 						}
 					}
 					entity.addStatusEffect(new StatusEffectInstance(ModEffects.SOULLOCK, 6000, 0, false, false));

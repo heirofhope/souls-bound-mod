@@ -42,7 +42,7 @@ public class SoulLock extends StatusEffect {
 
 
 			//hehe
-			if (remainingDuration < 5960) {
+			if (remainingDuration < 5980) {
 //=================[ static rendering shenanigans ] =====================
 				AzuraParticleRenderer.renderCircle(
 					(ServerWorld) entity.getWorld(),
@@ -63,8 +63,8 @@ public class SoulLock extends StatusEffect {
 
 				AzuraParticleRenderer.renderChain(
 					(ServerWorld) entity.getWorld(),
-					entity.getPos().add(new Vec3d(0.1, 1.7, 0)),
 					entity.getPos().add(new Vec3d(1.5, -1, 0)),
+					entity.getPos().add(new Vec3d(0.1, 1.3, 0)),
 					ModParticles.SCYTHE_CHAIN_PARTICLE_1,
 					ModParticles.SCYTHE_CHAIN_PARTICLE_2
 
@@ -72,8 +72,8 @@ public class SoulLock extends StatusEffect {
 
 				AzuraParticleRenderer.renderChain(
 					(ServerWorld) entity.getWorld(),
-					entity.getPos().add(new Vec3d(-0.1, 1.7, 0)),
 					entity.getPos().add(new Vec3d(-1.5, -1, 0)),
+					entity.getPos().add(new Vec3d(-0.1, 1.3, 0)),
 					ModParticles.SCYTHE_CHAIN_PARTICLE_1,
 					ModParticles.SCYTHE_CHAIN_PARTICLE_2
 
@@ -82,8 +82,8 @@ public class SoulLock extends StatusEffect {
 
 				AzuraParticleRenderer.renderChain(
 					(ServerWorld) entity.getWorld(),
-					entity.getPos().add(new Vec3d(0, 1.7, 0.1)),
 					entity.getPos().add(new Vec3d(0, -1, 1.5)),
+					entity.getPos().add(new Vec3d(0, 1.3, 0.1)),
 					ModParticles.SCYTHE_CHAIN_PARTICLE_1,
 					ModParticles.SCYTHE_CHAIN_PARTICLE_2
 
@@ -92,16 +92,33 @@ public class SoulLock extends StatusEffect {
 
 				AzuraParticleRenderer.renderChain(
 					(ServerWorld) entity.getWorld(),
-					entity.getPos().add(new Vec3d(0, 1.7, -0.1)),
 					entity.getPos().add(new Vec3d(0, -1, -1.5)),
+					entity.getPos().add(new Vec3d(0, 1.3, -0.1)),
 					ModParticles.SCYTHE_CHAIN_PARTICLE_1,
 					ModParticles.SCYTHE_CHAIN_PARTICLE_2
 
 				);
 			} else {
 				//=================[ RAISING COOL THINGIE ANIMATION SHENANIGANS ]=====================
-			double animationProgress = (double) (6015 - remainingDuration) / 55;
+			double animationProgress = (double) (6015 - remainingDuration) / 35;
 				LOGGER.info("Remaining Duration: " + animationProgress);
+
+
+				AzuraParticleRenderer.renderCircle(
+					(ServerWorld) entity.getWorld(),
+					entity.getPos().add(new Vec3d(0, 1.4 * animationProgress, 0)),
+					new Vec3d(0, 1, 0),
+					1.5 + (-0.9 * animationProgress),
+					ModParticles.SCYTHE_CHAIN_PARTICLE_2
+				);
+
+				AzuraParticleRenderer.renderCircle(
+					(ServerWorld) entity.getWorld(),
+					entity.getPos().add(new Vec3d(0, (1.4 * animationProgress) - 0.4, 0)),
+					new Vec3d(0, 1, 0),
+					1.5 + (-0.9 * animationProgress),
+					ModParticles.SCYTHE_CHAIN_PARTICLE_2
+				);
 
 				AzuraParticleRenderer.renderChain(
 					(ServerWorld) entity.getWorld(),

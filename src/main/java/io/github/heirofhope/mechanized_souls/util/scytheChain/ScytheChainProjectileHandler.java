@@ -81,7 +81,7 @@ public class ScytheChainProjectileHandler {
 
 				for (Entity entity : lookingForOwner) {
 					if (entity.getUuid().equals(owner)) {
-						AzuraParticleRenderer.renderLine(world,entity.getPos(),position, ModParticles.SCYTHE_CHAIN_PARTICLE_1);
+						AzuraParticleRenderer.renderChain(world,entity.getPos(),position, ModParticles.SCYTHE_CHAIN_PARTICLE_1,ModParticles.SCYTHE_CHAIN_PARTICLE_2);
 					}
 				}
 

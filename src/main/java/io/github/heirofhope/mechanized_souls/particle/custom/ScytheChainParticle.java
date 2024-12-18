@@ -15,7 +15,7 @@ public class ScytheChainParticle extends SpriteBillboardParticle {
 		this.x = xCoord;
 		this.y = yCoord;
 		this.z = zCoord;
-		this.scale = 0.035f;
+		this.scale = 0.04f;
 		this.maxAge = 1;
 		this.setSpriteForAge(spriteSet);
 

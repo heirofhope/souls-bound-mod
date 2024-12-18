@@ -48,8 +48,9 @@ public class ScytheChainLauncher {
 					new Vec3d(player.getX() + aim.getX(), player.getY() + 1.5 + aim.getY(), player.getZ() + aim.getZ()), // Position
 					player.getUuid(),
 					aim.multiply(shootSpeed), // Speed based on player's direction, doubled
-					170 // Lifetime in ticks
+					30 // Lifetime in ticks
 				);
+				ScytheChainMain.CHAINED_ENTITYS = null;
 
 
 
