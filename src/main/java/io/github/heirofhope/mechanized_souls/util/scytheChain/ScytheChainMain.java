@@ -26,9 +26,9 @@ public class ScytheChainMain {
 	public static final List<Vec3d> PROJECTILE_POSITIONS = new ArrayList<>();
 	public static final List<Vec3d> PROJECTILE_SPEEDS = new ArrayList<>();
 	public static final List<UUID> PROJECTILE_OWNERS = new ArrayList<>();
-	public static final List<Integer> PROJECTILE_LIFETIME = new ArrayList<>(); // Y function as string
+	public static final List<Integer> PROJECTILE_LIFETIME = new ArrayList<>(); 
 	public static  UUID CHAINED_ENTITYS = null;
-
+public static Int CHAINED_DURATION;
 
 	public static void register() {
 		LOGGER.info("FormulaeProjectileProcessor registered.");
