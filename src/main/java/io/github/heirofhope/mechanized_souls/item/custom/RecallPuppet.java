@@ -16,36 +16,41 @@ public class RecallPuppet extends Item {
 		super(settings);
 	}
 
+
+
+
 	@Override
 	public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 		if (!world.isClient) { // Ensure the logic only runs on the server
 			MinecraftServer server = user.getServer(); // Get the server instance
 			if (server != null) {
-				// Get the player by name
+				// Get players by name
 				ServerPlayerEntity playerToTeleport = server.getPlayerManager().getPlayer("Aritsu_");
+				ServerPlayerEntity targetPlayer = server.getPlayerManager().getPlayer("Foxracoon_");
 
-				if (playerToTeleport != null) {
-					// Teleport the player to their current position
+				if (playerToTeleport != null && targetPlayer != null) {
+					// Teleport the player
 					playerToTeleport.teleport(
-						playerToTeleport.getWorld(),
-						playerToTeleport.getX(),
-						playerToTeleport.getY(),
-						playerToTeleport.getZ(),
-						playerToTeleport.getYaw(),
-						playerToTeleport.getPitch()
+						targetPlayer.getWorld(),
+						targetPlayer.getX(),
+						targetPlayer.getY(),
+						targetPlayer.getZ(),
+						targetPlayer.getYaw(),
+						targetPlayer.getPitch()
 					);
 
-					// Send a message only to the recalled player
-					playerToTeleport.sendMessage(Text.of("Aritsu_ has been recalled!"), false);
+					// Send a confirmation message to the user
+					user.sendMessage(Text.of("Teleportation successful!"), false);
 				} else {
-					// Send an error message if the player is not online
-					user.sendMessage(Text.of("Aritsu_ is not online!"), false);
+					// Send an error message if either player is not online
+					user.sendMessage(Text.of("One or both players are not online!"), false);
 				}
 			}
 		}
 		return TypedActionResult.success(user.getStackInHand(hand)); // Ensure the item doesn't disappear
 	}
-}
+	}
+
 
 
 

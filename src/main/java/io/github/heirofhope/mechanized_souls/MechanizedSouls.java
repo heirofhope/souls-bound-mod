@@ -20,11 +20,12 @@ import org.slf4j.LoggerFactory;
 public class MechanizedSouls implements ModInitializer {
 	public static final String MOD_ID = "mechanized_souls";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
+	public static final DefaultParticleType SOUL_LINK_PARTICLE = FabricParticleTypes.simple();
 
 
 	@Override
     public void onInitialize(ModContainer mod) {
+
 
 		//	ModConfiguredFeatures.registerConfiguredFeature();
 		LOGGER.info("Hello Quilt world from {}! Stay fresh!", mod.metadata().name());
@@ -33,12 +34,18 @@ public class MechanizedSouls implements ModInitializer {
 		ModParticles.registerParticles();
 
 
+
+
 		//Classes registrations
 		ScytheChainLauncher.register();
 
 	//	ModConfiguredFeatures.registerConfiguredFeature();
+
 		ModItems.RegisterModItems();
+		ScytheChainMain.register();
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
+
+
 		ModEffects.registerEffects();
 		BeforeDeathHandler.register();
 

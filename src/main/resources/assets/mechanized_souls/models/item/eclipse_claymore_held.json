@@ -1,7 +1,7 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "mechanized_souls:item/guitar_held"
+		"layer0": "mechanized_souls:item/eclipse_claymore_held"
 	},
   "display": {
     "ground": {
