@@ -58,12 +58,12 @@ public class ScytheChainProjectileHandler {
 
 				for (Entity entity : entitiesAtPosition) {
 					if (entity.getBoundingBox().contains(interpolatedPosition)) {
-						// Only set CHAINED_ENTITYS if it hasn't already been chained
-
+					
+//here is were tge entity is actually chained.
+//later swap the variable for a pair of lists
 
 							ScytheChainMain.CHAINED_ENTITYS = entity.getUuid();
 
-ScytheChainMain.CHAINED_DURATION = 300;
 
 
 
