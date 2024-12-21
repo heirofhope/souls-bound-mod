@@ -2,37 +2,25 @@ package io.github.heirofhope.mechanized_souls.entity.custom;
 
 import io.github.heirofhope.mechanized_souls.entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
-import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
-import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -43,12 +31,10 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 import software.bernie.geckolib3.util.GeckoLibUtil;
 
-import java.util.Optional;
 
 public class KnightEntity extends TameableEntity implements IAnimatable {
 
 	private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
-	private boolean isAnimating = true;
 
 	private static final TrackedData<Boolean> SITTING = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 	public static final TrackedData<Integer> ACTION_STATE = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.INTEGER);
@@ -179,23 +165,48 @@ public class KnightEntity extends TameableEntity implements IAnimatable {
 		this.dataTracker.startTracking(ACTION_STATE, 0);
 	}
 
-	// Animation handling
-	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-		if (this.isAnimating) {
+
+
+	// Animation handling <==DO NOT TOUCH UNLESS TOLD TO===> by Hour ofc
+
+
+
+	@Override
+	public void registerControllers(final AnimationData data) {
+		data.addAnimationController(new AnimationController(this,"controller",
+			0, this::predicate));
+
+		data.addAnimationController(new AnimationController(this,"attackController",
+			0, this::attackPredicate));
+	}
+
+	private <E extends IAnimatable> PlayState attackPredicate(AnimationEvent<E> event) {
+		if (this.isAttacking()) {
 			event.getController()
-				.setAnimation(new AnimationBuilder().addAnimation("animation.fer_golem.idle_notafterthatgyatt", ILoopType.EDefaultLoopTypes.LOOP)
-					.addAnimation("animation.fer_golem.walk", ILoopType.EDefaultLoopTypes.LOOP));
-		} else {
-			event.getController().clearAnimationCache();
-			return PlayState.STOP;
+				.setAnimation(new AnimationBuilder()
+					.addAnimation("animation.fer_golem.attack_sword_updown",
+						ILoopType.EDefaultLoopTypes.HOLD_ON_LAST_FRAME));
+			return PlayState.CONTINUE;
 		}
 		return PlayState.CONTINUE;
 	}
 
-	@Override
-	public void registerControllers(AnimationData animationData) {
-		animationData.addAnimationController(new AnimationController(this, "controller", 0, this::predicate));
+
+	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
+		if (event.isMoving()){
+			event.getController()
+				.setAnimation(new AnimationBuilder()
+					.addAnimation("animation.fer_golem.walk",
+						ILoopType.EDefaultLoopTypes.LOOP));
+			return PlayState.CONTINUE;
+		}
+		event.getController()
+			.setAnimation(new AnimationBuilder()
+				.addAnimation("animation.fer_golem.idle_activegyattsearch",
+					ILoopType.EDefaultLoopTypes.LOOP));
+		return PlayState.CONTINUE;
 	}
+
 
 	@Override
 	public AnimationFactory getFactory() {
