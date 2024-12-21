@@ -1,9 +1,6 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "mechanized_souls:item/rock_sword_gui"
-  }
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "mechanized_souls:item/rock_sword_gui"
+	}
 }
-
-
-

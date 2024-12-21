@@ -11,8 +11,4 @@ public class ModItemGroup {
 		new Identifier(MechanizedSouls.MOD_ID, "heir_tab"), () ->new ItemStack(ModItems.FERROCIUM));
 	public static final ItemGroup FOX_TAB = FabricItemGroupBuilder.build(
 		new Identifier(MechanizedSouls.MOD_ID, "fox_tab"), () ->new ItemStack(ModItems.closed_contract));
-	public static final ItemGroup HOUR_TAB = FabricItemGroupBuilder.build(
-		new Identifier(MechanizedSouls.MOD_ID, "hour_tab"), () ->new ItemStack(ModItems.SUSSY_ITEM));
-	public static final ItemGroup ARITSU_TAB = FabricItemGroupBuilder.build(
-		new Identifier(MechanizedSouls.MOD_ID, "aritsu_tab"), () ->new ItemStack(ModItems.FERROCIUM_LEGGINGS));
 }

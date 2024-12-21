@@ -36,7 +36,7 @@ public abstract class ItemRendererMixin {
 				.getBakedModelManager()
 				.getModel(new ModelIdentifier("mechanized_souls:dawn_cleaver_held", "inventory"));
 		}
-		if (stack.isOf(ModItems.ROCK_SWORD) && renderMode != ModelTransformation.Mode.GUI) {
+		if (stack.isOf(ModItems.ferrocium_box_cutter) && renderMode != ModelTransformation.Mode.GUI) {
 			return MinecraftClient.getInstance()
 				.getBakedModelManager()
 				.getModel(new ModelIdentifier("mechanized_souls:rock_sword_held", "inventory"));
@@ -50,11 +50,6 @@ public abstract class ItemRendererMixin {
 			return MinecraftClient.getInstance()
 				.getBakedModelManager()
 				.getModel(new ModelIdentifier("mechanized_souls:soul_scythe_held", "inventory"));
-		}
-		if (stack.isOf(ModItems.ECLIPSE_CLAYMORE) && renderMode != ModelTransformation.Mode.GUI) {
-			return MinecraftClient.getInstance()
-				.getBakedModelManager()
-				.getModel(new ModelIdentifier("mechanized_souls:eclipse_claymore_held", "inventory"));
 		}
 		return value;
 	}
