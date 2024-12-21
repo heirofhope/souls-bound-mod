@@ -59,7 +59,15 @@ public class ScytheChainProjectileHandler {
 				for (Entity entity : entitiesAtPosition) {
 					if (entity.getBoundingBox().contains(interpolatedPosition)) {
 						// Only set CHAINED_ENTITYS if it hasn't already been chained
+
+
 							ScytheChainMain.CHAINED_ENTITYS = entity.getUuid();
+
+ScytheChainMain.CHAINED_DURATION = 300;
+
+
+
+
 						hasHitEntity = true;
 						break; // We hit something, stop checking further
 					}
