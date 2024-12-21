@@ -26,9 +26,9 @@ public class ScytheChainMain {
 	public static final List<Vec3d> PROJECTILE_POSITIONS = new ArrayList<>();
 	public static final List<Vec3d> PROJECTILE_SPEEDS = new ArrayList<>();
 	public static final List<UUID> PROJECTILE_OWNERS = new ArrayList<>();
-	public static final List<Integer> PROJECTILE_LIFETIME = new ArrayList<>(); 
+	public static final List<Integer> PROJECTILE_LIFETIME = new ArrayList<>();
 	public static  UUID CHAINED_ENTITYS = null;
-public static Int CHAINED_DURATION = 0;
+	public static int CHAINED_DURATION = 0;
 
 	public static void register() {
 		LOGGER.info("FormulaeProjectileProcessor registered.");
@@ -47,12 +47,11 @@ public static Int CHAINED_DURATION = 0;
 				if (world instanceof ServerWorld serverWorld) {
 					for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
 						if (player.getMainHandStack().getItem() == ModItems.SOUL_SCYTHE)
-
-if (CHAINED_DURATION > 0){
-						//Call the MATHHHHHHHHHHHHHHHHHHHH if it didn't expired
-						ScytheChainLockHandler.SoulLockTick(serverWorld, CHAINED_ENTITYS, player.getPos());
-CHAINED_DURATION = CHAINED_DURATION - 1;
-}
+						if (CHAINED_DURATION > 0){
+							//Call the MATHHHHHHHHHHHHHHHHHHHH if it didn't expired
+							ScytheChainLockHandler.SoulLockTick(serverWorld, CHAINED_ENTITYS, player.getPos());
+							CHAINED_DURATION = CHAINED_DURATION - 1;
+						}
 
 					}
 
