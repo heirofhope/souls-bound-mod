@@ -35,7 +35,7 @@ public class MechanizedSouls implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
 
-		ModEffects.registerStatusEffect();
+		ModEffects.registerEffects();
 		BeforeDeathHandler.register();
     }
 }

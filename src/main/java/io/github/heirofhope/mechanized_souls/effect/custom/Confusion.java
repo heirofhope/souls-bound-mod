@@ -4,9 +4,9 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectType;
 
-public class Confution extends StatusEffect {
+public class Confusion extends StatusEffect {
 
-	public Confution(StatusEffectType type, int color) {
+	public Confusion(StatusEffectType type, int color) {
 	super(type, color);
 }
 
