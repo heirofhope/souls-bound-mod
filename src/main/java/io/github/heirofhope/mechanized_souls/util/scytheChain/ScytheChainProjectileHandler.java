@@ -1,6 +1,5 @@
 package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
-//===============[ Imports ]=================
 import io.github.heirofhope.mechanized_souls.particle.ModParticles;
 import io.github.heirofhope.mechanized_souls.util.AzuraParticleRenderer;
 import net.minecraft.entity.Entity;
@@ -58,7 +57,7 @@ public class ScytheChainProjectileHandler {
 
 				for (Entity entity : entitiesAtPosition) {
 					if (entity.getBoundingBox().contains(interpolatedPosition)) {
-					
+
 //here is were tge entity is actually chained.
 //later swap the variable for a pair of lists
 

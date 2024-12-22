@@ -1,7 +1,5 @@
 package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
-//===============[ Imports ]=================
-
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;

@@ -43,7 +43,6 @@ import java.util.Optional;
 public class KnightEntity extends TameableEntity implements IAnimatable {
 
 	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
-	private boolean isAnimating = true;
 
 	protected static final TrackedData<Boolean> DORMANT = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 	public static final TrackedData<Optional<BlockPos>> DORMANT_POS = DataTracker.registerData(KnightEntity.class, TrackedDataHandlerRegistry.OPTIONAL_BLOCK_POS);
@@ -204,12 +203,16 @@ public class KnightEntity extends TameableEntity implements IAnimatable {
 
 
 	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-		if (this.isAnimating) {
+		if (event.isMoving()) {
 			event.getController()
-				.setAnimation(new AnimationBuilder().addAnimation("animation.fer_golem.idle_notafterthatgyatt", ILoopType.EDefaultLoopTypes.LOOP)
-					.addAnimation("animation.fer_golem.walk", ILoopType.EDefaultLoopTypes.LOOP));
+				.setAnimation(new AnimationBuilder()
+					.addAnimation("animation.fer_golem.walk",
+						ILoopType.EDefaultLoopTypes.LOOP));
 		} else {
-			event.getController().clearAnimationCache();
+			event.getController()
+				.setAnimation(new AnimationBuilder()
+					.addAnimation("animation.fer_golem.idle_notafterthatgyatt",
+						ILoopType.EDefaultLoopTypes.LOOP));
 			return PlayState.STOP;
 		}
 		return PlayState.CONTINUE;

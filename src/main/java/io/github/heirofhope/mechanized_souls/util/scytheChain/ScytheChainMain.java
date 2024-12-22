@@ -1,6 +1,5 @@
 package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
-//===============[ Imports ]=================
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -46,10 +45,10 @@ public class ScytheChainMain {
 				if (world instanceof ServerWorld serverWorld) {
 					for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
 						if (player.getMainHandStack().getItem() == ModItems.SOUL_SCYTHE)
-					
-							//Call the MATHHHHHHHHHHHHHHHHHHHH
+
+							//Call the MATH
 							ScytheChainLockHandler.SoulLockTick(serverWorld, CHAINED_ENTITYS, player.getPos());
-						
+
 
 					}
 
