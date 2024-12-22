@@ -5,14 +5,14 @@
 			"id": "mechanized_souls",
 			"version": "${version}",
 			"metadata": {
-				"name": "Souls Bound",
+				"name": "Souls-Bound",
 				"description": "Make Big Buff Metallic Men With Ferrocium!!11!!!1!",
 				"contributors": {
-					"Heir": "Owner",
-					"Fox": "Misc. Coder",
-					"Hour": "Modeler & Coder",
-					"Aristu": "Entity Coder",
-					"Azura Nishio": "Artist & Coder"
+					"HeirOfHope": "Owner, Code Writer & Lead Dev",
+					"HourSlow": "Model Maker & Code Writer",
+					"Foxcoon": "Code Writer",
+					"Aristu": "Entity Code Writer",
+					"Azura": "Particle Code Writer"
 				},
 				"contact": {},
 				"icon": "assets/example_mod/icon.png"

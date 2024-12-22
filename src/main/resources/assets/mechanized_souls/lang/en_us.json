@@ -9,23 +9,16 @@
   "item.mechanized_souls.open_contract": "Empty Contract",
   "item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
   "item.mechanized_souls.closed_contract.tooltip": "Signed By {player}",
-  "item.mechanized_souls.soul_scythe": "Soul drain",
-  "item.mechanized_souls.rock_sword": "Ferrocium Box-Cutter",
-
-  "item.mechanized_souls.ferrocium_helmet": "Ferrocium Helmet",
-  "item.mechanized_souls.ferrocium_chestplate": "Ferrocium Chestplate",
-  "item.mechanized_souls.ferrocium_leggings": "Ferrocium Leggings",
-  "item.mechanized_souls.ferrocium_boots": "Ferrocium Boots",
+  "item.mechanized_souls.soul_scythe": "Soul Snatcher",
+  "item.mechanized_souls.rock_sword": "Big Ass Rock Sword",
 
   "itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
   "itemGroup.mechanized_souls.fox_tab": "Lemons & Demons",
 
   "item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
-  "item.mechanized_souls.knight": "Ferrocium Knight",
+  "entity.mechanized_souls.knight": "Ferrocium Knight",
 
-  "itemGroup.mechanized_souls.hour_tab": "Ludicrous Tomfoolery or Delectable Sweets",
   "item.mechanized_souls.sussy_item": "Sussy Item",
-  "item.mechanized_souls.eclipse_claymore": "Eclipse Claymore",
 
   "effect.mechanized_souls.soullock": "SoulLock"
 }

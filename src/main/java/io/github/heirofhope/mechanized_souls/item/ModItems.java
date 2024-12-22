@@ -2,7 +2,6 @@ package io.github.heirofhope.mechanized_souls.item;
 
 import io.github.heirofhope.mechanized_souls.MechanizedSouls;
 import io.github.heirofhope.mechanized_souls.item.custom.*;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -36,7 +35,7 @@ public class ModItems {
 		new DawnCleaverItem(ModToolMaterials.FOXIUM, 6,-3.75f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
-	public static final Item ferrocium_box_cutter = registeritem("rock_sword",
+	public static final Item ROCK_SWORD = registeritem("rock_sword",
 		new DawnCleaverItem(ModToolMaterials.FOXIUM, 0,-2.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
@@ -59,36 +58,13 @@ public class ModItems {
 	public static final Item recall_puppet = registeritem("recall_puppet",
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
-// Aristu's Tomfoolery:
-
-	public static final Item FERROCIUM_HELMET = registeritem("ferrocium_helmet",
-		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.HEAD,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
-	public static final Item FERROCIUM_CHESTPLATE = registeritem("ferrocium_chestplate",
-		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.CHEST,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
-	public static final Item FERROCIUM_LEGGINGS = registeritem("ferrocium_leggings",
-		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.LEGS,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
-	public static final Item FERROCIUM_BOOTS = registeritem("ferrocium_boots",
-		new ArmorItem(ModArmorMaterials.FERROCIUM, EquipmentSlot.FEET,
-			new QuiltItemSettings().group(ModItemGroup.ARITSU_TAB)));
-
 	public static final Item soul_drain = registeritem("soul_drain",
-		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.ARITSU_TAB)));
+		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
-
-//	  Hour's Tomfoolery:
-
-
-	//This Item is a debug item, DO NOT DELETE!
 	public static final Item SUSSY_ITEM = registeritem("sussy_item",
 		new SwordItem(ModToolMaterials.FOXIUM, 9999,9999,
-			new QuiltItemSettings().group(ModItemGroup.HOUR_TAB)));
+			new QuiltItemSettings()));
 
-	public static final Item ECLIPSE_CLAYMORE = registeritem("eclipse_claymore",
-		new HalberdItem(ModToolMaterials.FERROCIUM, 5,-3.5f,
-			new QuiltItemSettings().group(ModItemGroup.HOUR_TAB)));
 
 
 

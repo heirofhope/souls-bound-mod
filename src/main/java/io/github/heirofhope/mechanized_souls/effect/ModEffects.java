@@ -13,11 +13,12 @@ public class ModEffects {
 
 	public static StatusEffect SOULLOCK;
 
-	public static StatusEffect registerStatusEffect() {
+	public static StatusEffect registerStatusEffect(String name) {
 		return Registry.register(Registry.STATUS_EFFECT, new Identifier(MechanizedSouls.MOD_ID, name),
 			new SoulLock(StatusEffectType.HARMFUL, 312462));
+	}
 
+	public static void registerEffects() {
+		SOULLOCK = registerStatusEffect("soullock");
 	}
 }
-
-
