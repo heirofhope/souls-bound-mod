@@ -61,7 +61,8 @@ public class ScytheChainProjectileHandler {
 //here is were tge entity is actually chained.
 //later swap the variable for a pair of lists
 
-							ScytheChainMain.CHAINED_ENTITYS = entity.getUuid();
+							ScytheChainMain.CHAINED_ENTITYS.add(entity.getUuid());
+							ScytheChainMain.CHAIN_OWNERS.add(owner);
 
 
 
@@ -88,7 +89,7 @@ public class ScytheChainProjectileHandler {
 
 				for (Entity entity : lookingForOwner) {
 					if (entity.getUuid().equals(owner)) {
-						AzuraParticleRenderer.renderChain(world,entity.getPos(),position, ModParticles.SCYTHE_CHAIN_PARTICLE_1,ModParticles.SCYTHE_CHAIN_PARTICLE_2);
+						AzuraParticleRenderer.renderChain(world,entity.getPos().add(new Vec3d(0,1,0)),position.add(new Vec3d(0,1,0)), ModParticles.SCYTHE_CHAIN_PARTICLE_1,ModParticles.SCYTHE_CHAIN_PARTICLE_2);
 					}
 				}
 

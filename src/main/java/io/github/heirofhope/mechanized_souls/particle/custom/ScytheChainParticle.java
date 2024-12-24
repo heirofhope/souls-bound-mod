@@ -8,29 +8,33 @@ import net.minecraft.particle.DefaultParticleType;
 
 public class ScytheChainParticle extends SpriteBillboardParticle {
 	protected ScytheChainParticle(ClientWorld level, double xCoord, double yCoord, double zCoord,
-							  SpriteProvider spriteSet, double xd, double yd, double zd) {
+								  SpriteProvider spriteSet, double xd, double yd, double zd) {
 		super(level, xCoord, yCoord, zCoord, xd, yd, zd);
 
-		this.velocityMultiplier = 1F;
+		this.velocityMultiplier = 0F; // Prevents velocity from affecting movement
 		this.x = xCoord;
 		this.y = yCoord;
 		this.z = zCoord;
-		this.scale = 0.04f;
+		this.scale = 0.08f;
 		this.maxAge = 1;
 		this.setSpriteForAge(spriteSet);
 
-//		this.red = 1f;
-//		this.green = 1f;
-//		this.blue = 1f;
+		this.velocityX = 0;
+		this.velocityY = 0;
+		this.velocityZ = 0; // Ensure no velocity
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		this.markDead(); // Ensures the particle is removed
+
+		// Override velocity again in case it's modified externally
+		this.velocityX = 0;
+		this.velocityY = 0;
+		this.velocityZ = 0;
+
+		// Optionally, you can remove this.markDead() if it shouldn't disappear after one tick
 	}
-
-
 
 	@Override
 	public ParticleTextureSheet getType() {
@@ -51,4 +55,3 @@ public class ScytheChainParticle extends SpriteBillboardParticle {
 		}
 	}
 }
-

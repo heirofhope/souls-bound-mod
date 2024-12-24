@@ -26,7 +26,8 @@ public class ScytheChainMain {
 	public static final List<Vec3d> PROJECTILE_SPEEDS = new ArrayList<>();
 	public static final List<UUID> PROJECTILE_OWNERS = new ArrayList<>();
 	public static final List<Integer> PROJECTILE_LIFETIME = new ArrayList<>();
-	public static  UUID CHAINED_ENTITYS = null;
+	public static final List <UUID> CHAIN_OWNERS = new ArrayList<>();
+	public static final List <UUID> CHAINED_ENTITYS = new ArrayList<>();
 
 	public static void register() {
 		LOGGER.info("FormulaeProjectileProcessor registered.");
@@ -46,9 +47,12 @@ public class ScytheChainMain {
 					for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
 						if (player.getMainHandStack().getItem() == ModItems.SOUL_SCYTHE)
 
-							//Call the MATH
-							ScytheChainLockHandler.SoulLockTick(serverWorld, CHAINED_ENTITYS, player.getPos());
-
+							for (int i = CHAIN_OWNERS.size() - 1; i >= 0; i--) {
+								//Call the MATH
+								if (player.getUuid().equals(CHAIN_OWNERS.get(i))) {
+									ScytheChainLockHandler.SoulLockTick(serverWorld, CHAINED_ENTITYS.get(i), player.getPos());
+								}
+							}
 
 					}
 

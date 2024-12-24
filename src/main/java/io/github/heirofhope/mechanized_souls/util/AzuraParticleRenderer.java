@@ -27,14 +27,14 @@ public class AzuraParticleRenderer {
 			return;
 		}
 
-		int ChainSteps = (int) ((distance / 0.3) - 4) * 20;
+		int ChainSteps = (int) ((distance / 0.4) - 4) * 20;
 		Vec3d ChainStepSize = new Vec3d(deltaX / ChainSteps, deltaY / ChainSteps, deltaZ / ChainSteps);
 
 		for (int i = 0; i < ChainSteps; i++) {
-			double n = i * 0.025;
+			double n = i * 0.05;
 			Vec3d localOffset = new Vec3d(
 				0.25,
-				Math.abs(Math.round(n) - n) + Math.round(n) * 0.6,
+				Math.abs(Math.round(n) - n) + Math.round(n) * 0.8,
 				Math.abs(n + 0.25 - Math.round(0.25 + n))
 			);
 
@@ -109,13 +109,13 @@ public class AzuraParticleRenderer {
 
 	// Circle renderer
 	public static void renderCircle(ServerWorld world, Vec3d center, Vec3d direction, double radius, DefaultParticleType Particle1) {
-		int ChainSteps = 120;
+		int ChainSteps = 60;
 
 		for (int i = 0; i < ChainSteps; i++) {
 			Vec3d localOffset = new Vec3d(
-				radius * Math.sin(Math.toRadians(3 * i)),
+				radius * Math.sin(Math.toRadians(6 * i)),
 				0,
-				radius * Math.cos(Math.toRadians(3 * i))
+				radius * Math.cos(Math.toRadians(6 * i))
 			);
 
 			Vec3d yAxle = direction.normalize();

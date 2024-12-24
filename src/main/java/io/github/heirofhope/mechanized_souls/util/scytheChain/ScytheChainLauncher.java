@@ -18,13 +18,10 @@ import java.util.Set;
 public class ScytheChainLauncher {
 	private static final Logger LOGGER = LoggerFactory.getLogger("philomagia");
 
-	// Keep track of players holding diamonds
-	private static final Set<ServerPlayerEntity> playersHoldingDiamond = new HashSet<>();
+	//
 
 	public static void register() {
 		//=======[ Main code ]=========================================
-		LOGGER.info("yep here's a logger copy pasta");
-
 		// Tick event listener
 		ServerTickEvents.START_SERVER_TICK.register(server -> {
 			//=======[ Tick event!! ]=========================================
@@ -38,7 +35,7 @@ public class ScytheChainLauncher {
 			LOGGER.info(player.getName().getString() + " right-clicked while holding: " + player.getStackInHand(hand).getItem());
 			if (player.getStackInHand(hand).getItem()== ModItems.SOUL_SCYTHE){
 
-				double shootSpeed = 0.8;
+				double shootSpeed = 1.3;
 
 					Vec3d aim = player.getRotationVec(1.0F);
 
@@ -48,8 +45,14 @@ public class ScytheChainLauncher {
 					aim.multiply(shootSpeed), // Speed based on player's direction, doubled
 					30 // Lifetime in ticks
 				);
-				ScytheChainMain.CHAINED_ENTITYS = null;
 
+
+				for (int i = ScytheChainMain.CHAIN_OWNERS.size() - 1; i >= 0; i--) {
+					if (ScytheChainMain.CHAIN_OWNERS.get(i).equals(player.getUuid())){
+						ScytheChainMain.CHAIN_OWNERS.remove(i);
+						ScytheChainMain.CHAINED_ENTITYS.remove(i);
+					}
+				}
 
 
 			}
