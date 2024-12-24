@@ -3,6 +3,7 @@ package io.github.heirofhope.mechanized_souls.util.scytheChain;
 import io.github.heirofhope.mechanized_souls.particle.ModParticles;
 import io.github.heirofhope.mechanized_souls.util.AzuraParticleRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
@@ -15,7 +16,7 @@ public class ScytheChainProjectileHandler {
 	public static void render(ServerWorld world, List<Vec3d> particlePositions, List<Vec3d> projectileSpeeds, List<Integer> projectileLifetime, List<UUID> projectileOwners) {
 
 		// Chain behavior configssss (pweasee if you can you not fix all ortografy mistakes? They're cute...)
-		double ChainProjectileHitboxSize = 0.5; // hmmmmm The actual size is doubled so.... Yeaaaahhhh
+		double ChainProjectileHitboxSize = 0.7; // hmmmmm The actual size is doubled so.... Yeaaaahhhh
 		double ChainGravity = -0.00; // I like -0.005....
 
 		// Iterate in reverse to avoid index issues during removal yipeeee that worked somehow? mewoooo
@@ -58,14 +59,26 @@ public class ScytheChainProjectileHandler {
 				for (Entity entity : entitiesAtPosition) {
 					if (entity.getBoundingBox().contains(interpolatedPosition)) {
 
-//here is were tge entity is actually chained.
-//later swap the variable for a pair of lists
-
-							ScytheChainMain.CHAINED_ENTITYS.add(entity.getUuid());
-							ScytheChainMain.CHAIN_OWNERS.add(owner);
+						ScytheChainMain.addChain(owner,entity.getUuid(),400);
+						//add some endrod particles here
 
 
-
+						for (int b = 0; b < 10; b++) {
+							double offsetX = (entity.getWorld().random.nextDouble() - 0.5) * 2.0;
+							double offsetY = entity.getWorld().random.nextDouble() * 1.5;
+							double offsetZ = (entity.getWorld().random.nextDouble() - 0.5) * 2.0;
+							world.spawnParticles(
+								ParticleTypes.END_ROD,
+								entity.getX(),
+								entity.getY() + 0.5,
+								entity.getZ(),
+								10,
+								offsetX,
+								offsetY,
+								offsetZ,
+								0.1
+							);
+						}
 
 
 						hasHitEntity = true;

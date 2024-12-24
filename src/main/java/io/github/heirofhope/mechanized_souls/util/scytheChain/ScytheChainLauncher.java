@@ -43,13 +43,14 @@ public class ScytheChainLauncher {
 					new Vec3d(player.getX() + aim.getX(), player.getY() + 1.5 + aim.getY(), player.getZ() + aim.getZ()), // Position
 					player.getUuid(),
 					aim.multiply(shootSpeed), // Speed based on player's direction, doubled
-					30 // Lifetime in ticks
+					35 // Lifetime in ticks
 				);
 
 
 				for (int i = ScytheChainMain.CHAIN_OWNERS.size() - 1; i >= 0; i--) {
 					if (ScytheChainMain.CHAIN_OWNERS.get(i).equals(player.getUuid())){
 						ScytheChainMain.CHAIN_OWNERS.remove(i);
+						ScytheChainMain.CHAIN_LIFETIME.remove(i);
 						ScytheChainMain.CHAINED_ENTITYS.remove(i);
 					}
 				}
