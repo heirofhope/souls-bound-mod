@@ -27,7 +27,7 @@ public class AzuraParticleRenderer {
 			return;
 		}
 
-		int ChainSteps = (int) ((distance / 0.4) - 4) * 20;
+		int ChainSteps = (int) ((distance / 0.8) - 0) * 20;
 		Vec3d ChainStepSize = new Vec3d(deltaX / ChainSteps, deltaY / ChainSteps, deltaZ / ChainSteps);
 
 		for (int i = 0; i < ChainSteps; i++) {
