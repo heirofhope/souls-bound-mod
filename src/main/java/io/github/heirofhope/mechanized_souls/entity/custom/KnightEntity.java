@@ -130,10 +130,10 @@ public class KnightEntity extends TameableEntity implements IAnimatable {
 			player.sendMessage(Text.translatable("amogus", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.DARK_RED).withObfuscated(true).withFont(new Identifier("minecraft", "default"))), true);
 		} else if(getActionState() == 2) {
 			setActionState(1);
-			player.sendMessage(Text.translatable("info.aylyth.mould_activate", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.AQUA)), true);
+			player.sendMessage(Text.translatable("info.text.knight_activate", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.AQUA)), true);
 		} else if(getActionState() == 1) {
 			setActionState(0);
-			player.sendMessage(Text.translatable("info.aylyth.mould_deactivate", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.DARK_GRAY)), true);
+			player.sendMessage(Text.translatable("info.text.knight_deactivate", world.getRegistryKey().getValue().getPath()).setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
 		}
 
 
@@ -208,12 +208,18 @@ public class KnightEntity extends TameableEntity implements IAnimatable {
 				.setAnimation(new AnimationBuilder()
 					.addAnimation("animation.fer_golem.walk",
 						ILoopType.EDefaultLoopTypes.LOOP));
-		} else {
+			return PlayState.CONTINUE;
+		} else if (this.isSitting()) {
 			event.getController()
 				.setAnimation(new AnimationBuilder()
 					.addAnimation("animation.fer_golem.idle_notafterthatgyatt",
 						ILoopType.EDefaultLoopTypes.LOOP));
-			return PlayState.STOP;
+		} else {
+			event.getController()
+				.setAnimation(new AnimationBuilder()
+					.addAnimation("animation.fer_golem.idle_activegyattsearch",
+						ILoopType.EDefaultLoopTypes.LOOP));
+			return PlayState.CONTINUE;
 		}
 		return PlayState.CONTINUE;
 	}
