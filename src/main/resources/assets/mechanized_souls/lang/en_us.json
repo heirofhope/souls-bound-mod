@@ -10,13 +10,16 @@
   "item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
   "item.mechanized_souls.closed_contract.tooltip": "Signed By {player}",
   "item.mechanized_souls.soul_scythe": "Soul Snatcher",
-  "item.mechanized_souls.rock_sword": "Big Ass Rock Sword",
+  "item.mechanized_souls.rock_sword": "Ferrocium Box-Cutter",
 
   "itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
   "itemGroup.mechanized_souls.fox_tab": "Lemons & Demons",
 
   "item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
   "entity.mechanized_souls.knight": "Ferrocium Knight",
+
+  "info.text.knight_activate": "State: Active!",
+  "info.text.knight_deactivate": "State: Inactive!",
 
   "item.mechanized_souls.sussy_item": "Sussy Item",
 
