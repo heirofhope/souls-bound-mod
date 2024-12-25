@@ -25,25 +25,22 @@ public class SoulLock extends StatusEffect {
 	public void applyUpdateEffect(LivingEntity entity, int amplifier) {
 		if (!entity.getWorld().isClient) {
 
+			//gets the effect remaining duration to run the animation
 			int remainingDuration = entity.getStatusEffect(this).getDuration();
 
-
-			//in here can i get the effect remaining duration?
-
+			//moves the entity to its actual position rounded with 1 decimal to prevent movement
 			double x = 0.1 * Math.round(entity.getX() * 10);
 			double y = 0.1 * Math.round(entity.getY() * 10);
 			double z = 0.1 * Math.round(entity.getZ() * 10);
+			entity.teleport(x,y,z);
 
-					entity.teleport(x,y,z);
-
+			//sets the entity speed to 0
 			entity.setVelocity(0,0,0);
 
-
-
-
-			//hehe
+			//checks if the animation is still running or already done
 			if (remainingDuration < 5980) {
 //=================[ static rendering shenanigans ] =====================
+				//render the chains and circles without movement
 				AzuraParticleRenderer.renderCircle(
 					(ServerWorld) entity.getWorld(),
 					entity.getPos().add(new Vec3d(0, 1.4, 0)),
@@ -101,8 +98,7 @@ public class SoulLock extends StatusEffect {
 			} else {
 				//=================[ RAISING COOL THINGIE ANIMATION SHENANIGANS ]=====================
 			double animationProgress = (double) (6015 - remainingDuration) / 35;
-				LOGGER.info("Remaining Duration: " + animationProgress);
-
+				//if the animation is still running animate the circle and chains raising
 
 				AzuraParticleRenderer.renderCircle(
 					(ServerWorld) entity.getWorld(),
@@ -159,13 +155,7 @@ public class SoulLock extends StatusEffect {
 					ModParticles.SCYTHE_CHAIN_PARTICLE_1,
 					ModParticles.SCYTHE_CHAIN_PARTICLE_2
 				);
-
-
-
-
-
 			}
-
 		}
 		super.applyUpdateEffect(entity, amplifier);
 	}

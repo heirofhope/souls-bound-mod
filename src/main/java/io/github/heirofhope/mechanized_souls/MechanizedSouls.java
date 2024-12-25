@@ -16,8 +16,6 @@ import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-
 public class MechanizedSouls implements ModInitializer {
 	public static final String MOD_ID = "mechanized_souls";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -27,15 +25,17 @@ public class MechanizedSouls implements ModInitializer {
 	@Override
     public void onInitialize(ModContainer mod) {
 
+		//Main files registering
 		ModParticles.registerParticles();
-		ScytheChainLauncher.register();
-
+		ModEffects.registerEffects();
 		ModItems.RegisterModItems();
-		ScytheChainMain.register();
 
+		//entity registering
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
 
-		ModEffects.registerEffects();
+		//Miscellaneous registers
+		ScytheChainLauncher.register();
+		ScytheChainMain.register();
 		BeforeDeathHandler.register();
     }
 }

@@ -9,7 +9,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class ModItems {
 
-//   Heir's Tomfoolery:
+	// Heir's Tomfoolery:
 
 	public static final Item FERROCIUM = registeritem("ferrocium",
 		new Item(new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
@@ -18,29 +18,25 @@ public class ModItems {
 		new KnightSpawnItem(new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
 
 	public static final Item HALBERD = registeritem("halberd",
-		new HalberdItem(ModToolMaterials.FERROCIUM, 5,-3.5f,
+		new HalberdItem(ModToolMaterials.FERROCIUM, 5, -3.5f,
 			new QuiltItemSettings().group(ModItemGroup.HEIR_TAB)));
 
 	public static final Item soul_cookie = registeritem("soul_cookie",
 		new Item(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder()
 			.hunger(4).build()).group(ModItemGroup.HEIR_TAB)));
 
-
-
-//    Fox's Tomfoolery:
-
-
+	// Fox's Tomfoolery:
 
 	public static final Item DAWN_CLEAVER = registeritem("dawn_cleaver",
-		new DawnCleaverItem(ModToolMaterials.FOXIUM, 6,-3.75f,
+		new DawnCleaverItem(ModToolMaterials.FOXIUM, 6, -3.75f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item ROCK_SWORD = registeritem("rock_sword",
-		new DawnCleaverItem(ModToolMaterials.FOXIUM, 0,-2.5f,
+		new DawnCleaverItem(ModToolMaterials.FOXIUM, 0, -2.5f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item SOUL_SCYTHE = registeritem("soul_scythe",
-		new SwordItem(ModToolMaterials.FOXIUM, 0,-3.50f,
+		new SwordItem(ModToolMaterials.FOXIUM, 0, -3.50f,
 			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
 
 	public static final Item book_cypher = registeritem("book_cypher",
@@ -62,21 +58,14 @@ public class ModItems {
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 	public static final Item SUSSY_ITEM = registeritem("sussy_item",
-		new SwordItem(ModToolMaterials.FOXIUM, 9999,9999,
+		new SwordItem(ModToolMaterials.FOXIUM, 9999, 9999,
 			new QuiltItemSettings()));
 
-
-
-
 	private static Item registeritem(String name, Item DawncleaverItem) {
-	return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), DawncleaverItem);
-}
+		return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), DawncleaverItem);
+	}
 
-	public  static  void RegisterModItems() {
-
-
-
+	public static void RegisterModItems() {
 		MechanizedSouls.LOGGER.debug("Registering Mod items for" + MechanizedSouls.MOD_ID);
 	}
 }
-

@@ -12,14 +12,18 @@ import net.minecraft.server.world.ServerWorld;
 public class BeforeDeathHandler {
 
 	public static void register() {
-
+//run the code in all entity after life reaching 0
 		ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
 
 			if (source.getAttacker() instanceof PlayerEntity player) {
 				ItemStack weapon = player.getMainHandStack();
-
+				//run if entity was killed by dawn cleaver
 				if (weapon.getItem() == ModItems.DAWN_CLEAVER) {
+
+					//increases entity health to prevent its death
 					entity.setHealth(250.0F);
+
+					//spawn endrod particles
 					if (entity.getWorld() instanceof ServerWorld serverWorld) {
 						for (int i = 0; i < 20; i++) {
 							double offsetX = (entity.getWorld().random.nextDouble() - 0.5) * 2.0;
@@ -38,7 +42,7 @@ public class BeforeDeathHandler {
 							);
 						}
 					}
-
+					//apply soulock effect
 					entity.addStatusEffect(new StatusEffectInstance(ModEffects.SOULLOCK, 6000, 0, false, false));
 
 				}

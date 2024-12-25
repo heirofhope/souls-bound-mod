@@ -12,7 +12,6 @@ public class ModParticles {
 	public static final DefaultParticleType SCYTHE_CHAIN_PARTICLE_2 = FabricParticleTypes.simple();
 
 
-
 	public static void registerParticles() {
 
 		Registry.register(Registry.PARTICLE_TYPE, new Identifier(MechanizedSouls.MOD_ID, "scythe_chain_particle_1"),

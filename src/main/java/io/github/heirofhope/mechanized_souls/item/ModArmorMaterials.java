@@ -38,8 +38,6 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
 
-
-
 	@Override
 	public int getDurability(EquipmentSlot slot) {
 		return 0;
