@@ -25,17 +25,16 @@ public class MechanizedSouls implements ModInitializer {
 	@Override
     public void onInitialize(ModContainer mod) {
 
-		//Main files registering
-		ModParticles.registerParticles();
 		ModEffects.registerEffects();
 		ModItems.RegisterModItems();
 
-		//entity registering
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
 
-		//Miscellaneous registers
 		ScytheChainLauncher.register();
 		ScytheChainMain.register();
+
 		BeforeDeathHandler.register();
+		ModParticles.registerParticles();
+
     }
 }

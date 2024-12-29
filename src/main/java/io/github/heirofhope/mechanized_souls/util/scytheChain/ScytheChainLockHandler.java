@@ -1,7 +1,7 @@
 package io.github.heirofhope.mechanized_souls.util.scytheChain;
 
 import io.github.heirofhope.mechanized_souls.particle.ModParticles;
-import io.github.heirofhope.mechanized_souls.util.AzuraParticleRenderer;
+import io.github.heirofhope.mechanized_souls.util.particleRenderer.AzuraParticleRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Box;

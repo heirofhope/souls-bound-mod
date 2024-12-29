@@ -49,7 +49,8 @@ public class ModItems {
 		new ClosedContractItem(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
 	public static final Item lemon = registeritem("lemon",
-		new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(2).build()).group(ModItemGroup.FOX_TAB)));
+		new Item(new QuiltItemSettings().food(new FoodComponent.Builder()
+				.hunger(2).build()).group(ModItemGroup.FOX_TAB)));
 
 	public static final Item recall_puppet = registeritem("recall_puppet",
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
@@ -60,6 +61,8 @@ public class ModItems {
 	public static final Item SUSSY_ITEM = registeritem("sussy_item",
 		new SwordItem(ModToolMaterials.FOXIUM, 9999, 9999,
 			new QuiltItemSettings()));
+
+
 
 	private static Item registeritem(String name, Item DawncleaverItem) {
 		return Registry.register(Registry.ITEM, new Identifier(MechanizedSouls.MOD_ID, name), DawncleaverItem);

@@ -1,0 +1,27 @@
+{
+  "item.mechanized_souls.ferrocium": "Terbium",
+  "item.mechanized_souls.halberd": "Pike",
+  "item.mechanized_souls.soul_cookie": "Ghoulish Delight",
+
+  "item.mechanized_souls.lemon": "Citrus",
+  "item.mechanized_souls.book_cypher": "The Bombanomicon",
+  "item.mechanized_souls.closed_contract": "Signed Arrangement",
+  "item.mechanized_souls.open_contract": "Empty Arrangement",
+  "item.mechanized_souls.dawn_cleaver": "Stone Henge On A Stick",
+  "item.mechanized_souls.closed_contract.tooltip": "Signed By {player}",
+  "item.mechanized_souls.soul_scythe": "Spirit Stealer",
+  "item.mechanized_souls.rock_sword": "A Letter Opener",
+
+  "itemGroup.mechanized_souls.heir_tab": "Spirit-Ring",
+  "itemGroup.mechanized_souls.fox_tab": "Citrus & Moloch",
+
+  "item.mechanized_souls.knight_spawnegg": "Terbium Cavalryman",
+  "entity.mechanized_souls.knight": "Terbium Cavalryman",
+
+  "info.text.knight_activate": "State: Active!",
+  "info.text.knight_deactivate": "State: Inactive!",
+
+  "item.mechanized_souls.sussy_item": "Suspicious Looking Item",
+
+  "effect.mechanized_souls.soullock": "SpiritStay"
+}

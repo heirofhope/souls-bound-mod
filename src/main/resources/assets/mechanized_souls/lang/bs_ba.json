@@ -1,0 +1,27 @@
+{
+  "item.mechanized_souls.ferrocium": "Ferocium",
+  "item.mechanized_souls.halberd": "Koplje",
+  "item.mechanized_souls.soul_cookie": "Duhovni Kolać",
+
+  "item.mechanized_souls.lemon": "Limun",
+  "item.mechanized_souls.book_cypher": "Knjiga o Duhovnim Sjenkama",
+  "item.mechanized_souls.closed_contract": "Potpisan Ugovor",
+  "item.mechanized_souls.open_contract": "Prazan Ugovor",
+  "item.mechanized_souls.dawn_cleaver": "Kočićev Mač",
+  "item.mechanized_souls.closed_contract.tooltip": "Potpiso: {player}",
+  "item.mechanized_souls.soul_scythe": "Uzimač Duša",
+  "item.mechanized_souls.rock_sword": "Veliki Mač",
+
+  "itemGroup.mechanized_souls.heir_tab": "Duš-o-Vezan",
+  "itemGroup.mechanized_souls.fox_tab": "Limuni i Demoni",
+
+  "item.mechanized_souls.knight_spawnegg": "Ferocium Vitez",
+  "entity.mechanized_souls.knight": "Ferocium Vitez",
+
+  "info.text.knight_activate": "Uključen!",
+  "info.text.knight_deactivate": "Isključen!",
+
+  "item.mechanized_souls.sussy_item": "Čudna Stvar",
+
+  "effect.mechanized_souls.soullock": "Duhovni Zaključan"
+}

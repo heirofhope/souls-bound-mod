@@ -1,4 +1,4 @@
-package io.github.heirofhope.mechanized_souls.util;
+package io.github.heirofhope.mechanized_souls.util.particleRenderer;
 
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.server.network.ServerPlayerEntity;
