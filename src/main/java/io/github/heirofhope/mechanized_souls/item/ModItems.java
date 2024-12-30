@@ -58,9 +58,17 @@ public class ModItems {
 	public static final Item soul_drain = registeritem("soul_drain",
 		new Item(new QuiltItemSettings().maxCount(1).group(ModItemGroup.FOX_TAB)));
 
-	public static final Item SUSSY_ITEM = registeritem("sussy_item",
-		new SwordItem(ModToolMaterials.FOXIUM, 9999, 9999,
-			new QuiltItemSettings()));
+	public static final Item GUITAR = registeritem("guitar",
+		new GuitarItem(ModToolMaterials.FOXIUM, 0, 1,
+			new QuiltItemSettings().group(ModItemGroup.FOX_TAB)));
+
+
+
+
+
+	//public static final Item SUSSY_ITEM = registeritem("sussy_item",
+		//new SwordItem(ModToolMaterials.FOXIUM, 9999, 9999,
+		//	new QuiltItemSettings()));
 
 
 
