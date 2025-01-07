@@ -4,16 +4,15 @@
   "package": "io.github.heirofhope.mechanized_souls.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "PlayerEntityMixin"
   ],
   "client": [
     "ItemRendererAccessor",
     "ItemRendererMixin",
     "ModelLoaderMixin",
     "PlayerEntityRendererMixin",
-    "PlayerEntityMixin"
+    "client.BipedEntityModelMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-    }
+  }
 }
