@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrosium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Sjelekake",
+"item.mechanized_souls.lemon": "Sitron",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
+"item.mechanized_souls.closed_contract": "Signert kontrakt",
+"item.mechanized_souls.open_contract": "Tom kontrakt",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Signert av {player}",
+"item.mechanized_souls.soul_scythe": "Soul Snatcher",
+"item.mechanized_souls.rock_sword": "Ferrocium Box-Cutter",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Sitroner og demoner",
+"item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
+"entity.mechanized_souls.knight": "Ferrocium Knight",
+"info.text.knight_activate": "Stat: Aktiv!",
+"info.text.knight_deactivate": "Stat: Inaktiv!",
+"item.mechanized_souls.sussy_item": "Sussy-gjenstand",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

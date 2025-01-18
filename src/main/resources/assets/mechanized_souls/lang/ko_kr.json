@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "페로슘",
+"item.mechanized_souls.halberd": "핼버드",
+"item.mechanized_souls.soul_cookie": "소울 쿠키",
+"item.mechanized_souls.lemon": "레몬",
+"item.mechanized_souls.book_cypher": "톰 오브 더 보이드 워커",
+"item.mechanized_souls.closed_contract": "서명된 계약",
+"item.mechanized_souls.open_contract": "빈 계약",
+"item.mechanized_souls.dawn_cleaver": "던 클리버",
+"item.mechanized_souls.closed_contract.tooltip": "{플레이어} 님이 서명했습니다",
+"item.mechanized_souls.soul_scythe": "소울 스내처",
+"item.mechanized_souls.rock_sword": "페로슘 박스 커터",
+"item.mechanized_souls.guitar": "로즈마리",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "레몬과 악마",
+"item.mechanized_souls.knight_spawnegg": "페로슘 나이트",
+"entity.mechanized_souls.knight": "페로슘 나이트",
+"info.text.knight_activate": "상태: 활성!",
+"info.text.knight_deactivate": "상태: 비활성!",
+"item.mechanized_souls.sussy_item": "수지 아이템",
+"effect.mechanized_souls.soullock": "소울 락"
+}

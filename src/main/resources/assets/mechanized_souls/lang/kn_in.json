@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "ಫೆರೋಸಿಯಮ್",
+"item.mechanized_souls.halberd": "ಹಾಲ್ಬರ್ಡ್",
+"item.mechanized_souls.soul_cookie": "ಸೋಲ್ ಕುಕಿ",
+"item.mechanized_souls.lemon": "ನಿಂಬೆ",
+"item.mechanized_souls.book_cypher": "ಟೋಮ್ ಆಫ್ ದಿ ವೂಯ್ಡ್ ವಾಕರ್",
+"item.mechanized_souls.closed_contract": "ಸಹಿ ಮಾಡಿದ ಒಪ್ಪಂದ",
+"item.mechanized_souls.open_contract": "ಖಾಲಿ ಒಪ್ಪಂದ",
+"item.mechanized_souls.dawn_cleaver": "ಡಾನ್ ಕ್ಲೀವರ್",
+"item.mechanized_souls.closed_contract.tooltip": "{ಪ್ಲೇಯರ್} ಸಹಿ ಮಾಡಿದರು",
+"item.mechanized_souls.soul_scythe": "ಸೋಲ್ ಸ್ನ್ಯಾಚರ್",
+"item.mechanized_souls.rock_sword": "ರೈಲು ಬಾಕ್ಸ್-ಕಟ್ಟರ್",
+"item.mechanized_souls.guitar": "ರೋಸ್ಮರಿ",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "ನಿಂಬೆಹಣ್ಣುಗಳು ಮತ್ತು ದೆವ್",
+"item.mechanized_souls.knight_spawnegg": "ಫೆರೋಸಿಯಮ್ ನೈಟ್",
+"entity.mechanized_souls.knight": "ಫೆರೋಸಿಯಮ್ ನೈಟ್",
+"info.text.knight_activate": "ರಾಜ್ಯ: ಸಕ್ರಿಯ!",
+"info.text.knight_deactivate": "ರಾಜ್ಯ: ನಿಷ್ಕ್ರಿಯ!",
+"item.mechanized_souls.sussy_item": "ಸುಸ್ಸಿ ಐಟಂ",
+"effect.mechanized_souls.soullock": "ಸೋಲ್ಲಾಕ್"
+}

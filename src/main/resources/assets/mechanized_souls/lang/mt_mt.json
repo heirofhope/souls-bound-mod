@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferroċju",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Cookie Soul",
+"item.mechanized_souls.lemon": "Lumi",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
+"item.mechanized_souls.closed_contract": "Kuntratt iffirmat",
+"item.mechanized_souls.open_contract": "Kuntratt vojt",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Iffirmat Minn {player}",
+"item.mechanized_souls.soul_scythe": "Soul Snatcher",
+"item.mechanized_souls.rock_sword": "Ferroid Box-Cutter",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Lumi u Demons",
+"item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
+"entity.mechanized_souls.knight": "Ferrocium Knight",
+"info.text.knight_activate": "Stat: Attiv!",
+"info.text.knight_deactivate": "Stat: Inattiv!",
+"item.mechanized_souls.sussy_item": "Oġġett Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

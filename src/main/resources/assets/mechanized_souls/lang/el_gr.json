@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Φεροασβέστιο",
+"item.mechanized_souls.halberd": "Χάλμπερντ",
+"item.mechanized_souls.soul_cookie": "Μπισκότο ψυχής",
+"item.mechanized_souls.lemon": "Λεμόνι",
+"item.mechanized_souls.book_cypher": "Τόμος του Κενού Γουόκερ",
+"item.mechanized_souls.closed_contract": "Υπογεγραμμένο συμβόλαιο",
+"item.mechanized_souls.open_contract": "Κενό συμβόλαιο",
+"item.mechanized_souls.dawn_cleaver": "Ντον Κλέβερ",
+"item.mechanized_souls.closed_contract.tooltip": "Υπογεγραμμένο από {παίκτη}",
+"item.mechanized_souls.soul_scythe": "Σνάτκερ ψυχής",
+"item.mechanized_souls.rock_sword": "Κόφτης κιβωτίων σιδήρου",
+"item.mechanized_souls.guitar": "Ροζάμι",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Λεμόνια & Δαίμονες",
+"item.mechanized_souls.knight_spawnegg": "Ιππότης σιδηροασβεστίου",
+"entity.mechanized_souls.knight": "Ιππότης σιδηροασβεστίου",
+"info.text.knight_activate": "Κατάσταση: Ενεργός!",
+"info.text.knight_deactivate": "Κατάσταση: Ανενεργό!",
+"item.mechanized_souls.sussy_item": "Στοιχείο Σάσι",
+"effect.mechanized_souls.soullock": "Ψυχοκλειδαριά"
+}

@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Hellebarde",
+"item.mechanized_souls.soul_cookie": "Soul Cookie",
+"item.mechanized_souls.lemon": "Zitrone",
+"item.mechanized_souls.book_cypher": "Die Zeit der Leere Walker",
+"item.mechanized_souls.closed_contract": "Unterzeichneter Vertrag",
+"item.mechanized_souls.open_contract": "Leerer Vertrag",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Signiert von {player}",
+"item.mechanized_souls.soul_scythe": "Seelenräuber",
+"item.mechanized_souls.rock_sword": "Ferrocium-Box-Cutter",
+"item.mechanized_souls.guitar": "Rosmarin",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Zitronen und Dämonen",
+"item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
+"entity.mechanized_souls.knight": "Ferrocium Knight",
+"info.text.knight_activate": "Bundesland: Aktiv!",
+"info.text.knight_deactivate": "Status: Inaktiv!",
+"item.mechanized_souls.sussy_item": "Sussy Item",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ферроциум",
+"item.mechanized_souls.halberd": "Хальберд",
+"item.mechanized_souls.soul_cookie": "Печиво душі",
+"item.mechanized_souls.lemon": "Лимон",
+"item.mechanized_souls.book_cypher": "Тома порожнечі Уокер",
+"item.mechanized_souls.closed_contract": "Підписаний договір",
+"item.mechanized_souls.open_contract": "Порожній контракт",
+"item.mechanized_souls.dawn_cleaver": "Світанок Клівер",
+"item.mechanized_souls.closed_contract.tooltip": "Підписано {player}",
+"item.mechanized_souls.soul_scythe": "Захоплювач душі",
+"item.mechanized_souls.rock_sword": "Ферроциєвий бокс-різак",
+"item.mechanized_souls.guitar": "Розмарин",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Лимони та демони",
+"item.mechanized_souls.knight_spawnegg": "Лицар фероцию",
+"entity.mechanized_souls.knight": "Лицар фероцию",
+"info.text.knight_activate": "Стан: Активний!",
+"info.text.knight_deactivate": "Стан: Неактивний!",
+"item.mechanized_souls.sussy_item": "Предмет Суссі",
+"effect.mechanized_souls.soullock": "Соуллок"
+}

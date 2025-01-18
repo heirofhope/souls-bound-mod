@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Soul Cookie",
+"item.mechanized_souls.lemon": "Limona",
+"item.mechanized_souls.book_cypher": "Tome Of Void Walker",
+"item.mechanized_souls.closed_contract": "Podpisana pogodba",
+"item.mechanized_souls.open_contract": "Prazna pogodba",
+"item.mechanized_souls.dawn_cleaver": "Zorni sekač",
+"item.mechanized_souls.closed_contract.tooltip": "Podpisal {player}",
+"item.mechanized_souls.soul_scythe": "Ugrabitelj duše",
+"item.mechanized_souls.rock_sword": "Iron Box Cutter",
+"item.mechanized_souls.guitar": "Rožmarin",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Limone in demoni",
+"item.mechanized_souls.knight_spawnegg": "Železniški vitez",
+"entity.mechanized_souls.knight": "Železniški vitez",
+"info.text.knight_activate": "Država: Aktivno!",
+"info.text.knight_deactivate": "Država: Neaktivno!",
+"item.mechanized_souls.sussy_item": "Sussy Element",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

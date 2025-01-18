@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberdas",
+"item.mechanized_souls.soul_cookie": "Sielos sausainis",
+"item.mechanized_souls.lemon": "Citrina",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
+"item.mechanized_souls.closed_contract": "Pasirašyta sutartis",
+"item.mechanized_souls.open_contract": "Tuščia sutartis",
+"item.mechanized_souls.dawn_cleaver": "Aušros kirtiklis",
+"item.mechanized_souls.closed_contract.tooltip": "Pasirašė {player}",
+"item.mechanized_souls.soul_scythe": "Sielos išplėšėjas",
+"item.mechanized_souls.rock_sword": "Geležies dėžutės pjaustytuvas",
+"item.mechanized_souls.guitar": "Rozmarinas",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Citrinos ir demonai",
+"item.mechanized_souls.knight_spawnegg": "Geležinkelio riteris",
+"entity.mechanized_souls.knight": "Geležinkelio riteris",
+"info.text.knight_activate": "Valstybė: Aktyvus!",
+"info.text.knight_deactivate": "Valstybė: neaktyvus!",
+"item.mechanized_souls.sussy_item": "Sussy prekė",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

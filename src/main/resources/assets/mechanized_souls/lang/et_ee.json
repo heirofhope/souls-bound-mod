@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Soul küpsis",
+"item.mechanized_souls.lemon": "Sidrun",
+"item.mechanized_souls.book_cypher": "Tühjuse kõnnitaja teema",
+"item.mechanized_souls.closed_contract": "Allkirjastatud leping",
+"item.mechanized_souls.open_contract": "Tühi leping",
+"item.mechanized_souls.dawn_cleaver": "Koidiku lõikur",
+"item.mechanized_souls.closed_contract.tooltip": "Allkirjastanud {mängija}",
+"item.mechanized_souls.soul_scythe": "Hinge röövistaja",
+"item.mechanized_souls.rock_sword": "Steel Box-Cutter",
+"item.mechanized_souls.guitar": "Rosmariin",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Sidrunid ja deemonid",
+"item.mechanized_souls.knight_spawnegg": "Rail Knight",
+"entity.mechanized_souls.knight": "Rail Knight",
+"info.text.knight_activate": "Riik: Aktiivne!",
+"info.text.knight_deactivate": "Riik: Mitteaktiivne!",
+"item.mechanized_souls.sussy_item": "Sussy toode",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

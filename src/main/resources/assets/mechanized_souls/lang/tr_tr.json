@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrosiyum",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Ruh Kurabiyesi",
+"item.mechanized_souls.lemon": "Limon",
+"item.mechanized_souls.book_cypher": "Boşluk Yürütücüsü",
+"item.mechanized_souls.closed_contract": "İmzalanan Sözleşme",
+"item.mechanized_souls.open_contract": "Boş Sözleşme",
+"item.mechanized_souls.dawn_cleaver": "Şafak Balığı",
+"item.mechanized_souls.closed_contract.tooltip": "{player} tarafından imzalandı",
+"item.mechanized_souls.soul_scythe": "Ruh Snatcher",
+"item.mechanized_souls.rock_sword": "Ferrosiyum Kutu-Kesici",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Limonlar ve Şeytanlar",
+"item.mechanized_souls.knight_spawnegg": "Ferrosiyum Şövalyesi",
+"entity.mechanized_souls.knight": "Ferrosiyum Şövalyesi",
+"info.text.knight_activate": "Durum: Aktif!",
+"info.text.knight_deactivate": "Durum: Etkin değil!",
+"item.mechanized_souls.sussy_item": "Sussy Öğesi",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Ciasteczko duszy",
+"item.mechanized_souls.lemon": "Cytryna",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
+"item.mechanized_souls.closed_contract": "Podpisany kontrakt",
+"item.mechanized_souls.open_contract": "Pusty kontrakt",
+"item.mechanized_souls.dawn_cleaver": "Tasak świtu",
+"item.mechanized_souls.closed_contract.tooltip": "Podpisany przez {player}",
+"item.mechanized_souls.soul_scythe": "Porywacz duszy",
+"item.mechanized_souls.rock_sword": "Stalowy frez do skrzynek",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Cytryny i demony",
+"item.mechanized_souls.knight_spawnegg": "Żelazd rycerski",
+"entity.mechanized_souls.knight": "Żelazd rycerski",
+"info.text.knight_activate": "Stan: Aktywny!",
+"info.text.knight_deactivate": "Stan: Nieaktywny!",
+"item.mechanized_souls.sussy_item": "Sussy Przedmiot",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

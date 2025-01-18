@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Dzelzs",
+"item.mechanized_souls.halberd": "Halberds",
+"item.mechanized_souls.soul_cookie": "Soul Cookie",
+"item.mechanized_souls.lemon": "Citrons",
+"item.mechanized_souls.book_cypher": "Tēma par tukšuma gājēju",
+"item.mechanized_souls.closed_contract": "Parakstīts līgums",
+"item.mechanized_souls.open_contract": "Tukšs līgums",
+"item.mechanized_souls.dawn_cleaver": "Rītausmas šķērs",
+"item.mechanized_souls.closed_contract.tooltip": "Parakstījis {player}",
+"item.mechanized_souls.soul_scythe": "Dvēseles laupītājs",
+"item.mechanized_souls.rock_sword": "Dzelzs kastes griezējs",
+"item.mechanized_souls.guitar": "Rozmarīns",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Citroni un dēmoni",
+"item.mechanized_souls.knight_spawnegg": "Dzelzceļa bruņinieks",
+"entity.mechanized_souls.knight": "Dzelzceļa bruņinieks",
+"info.text.knight_activate": "Valsts: Aktīvs!",
+"info.text.knight_deactivate": "Valsts: neaktīvs!",
+"item.mechanized_souls.sussy_item": "Sussy prece",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

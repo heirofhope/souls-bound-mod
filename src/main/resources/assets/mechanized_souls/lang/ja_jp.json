@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "フェロシウム",
+"item.mechanized_souls.halberd": "ハルバード",
+"item.mechanized_souls.soul_cookie": "ソウルクッキー",
+"item.mechanized_souls.lemon": "レモン",
+"item.mechanized_souls.book_cypher": "トーム・オブ・ザ・ヴォイド・ウォーカー",
+"item.mechanized_souls.closed_contract": "署名済み契約",
+"item.mechanized_souls.open_contract": "空の契約",
+"item.mechanized_souls.dawn_cleaver": "ドーン・クリーバー",
+"item.mechanized_souls.closed_contract.tooltip": "{プレイヤー} による署名",
+"item.mechanized_souls.soul_scythe": "ソウルスナッチャー",
+"item.mechanized_souls.rock_sword": "フェロシウムボックスカッター",
+"item.mechanized_souls.guitar": "ローズマリー",
+"itemGroup.mechanized_souls.heir_tab": "ソウルズ・バウンド",
+"itemGroup.mechanized_souls.fox_tab": "レモンとデーモン",
+"item.mechanized_souls.knight_spawnegg": "フェロシウムナイト",
+"entity.mechanized_souls.knight": "フェロシウムナイト",
+"info.text.knight_activate": "状態:アクティブ!",
+"info.text.knight_deactivate": "状態:非アクティブ!",
+"item.mechanized_souls.sussy_item": "スージーアイテム",
+"effect.mechanized_souls.soullock": "ソウルロック"
+}

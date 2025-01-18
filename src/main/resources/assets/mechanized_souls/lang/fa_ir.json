@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "فروسیوم",
+"item.mechanized_souls.halberd": "هالبرد",
+"item.mechanized_souls.soul_cookie": "کوکی روح",
+"item.mechanized_souls.lemon": "لیمو",
+"item.mechanized_souls.book_cypher": "توم خالی واکر",
+"item.mechanized_souls.closed_contract": "قرارداد امضا شده",
+"item.mechanized_souls.open_contract": "قرارداد خالی",
+"item.mechanized_souls.dawn_cleaver": "داون کلیور",
+"item.mechanized_souls.closed_contract.tooltip": "امضا شده توسط {بازیکن}",
+"item.mechanized_souls.soul_scythe": "اسناتچر روح",
+"item.mechanized_souls.rock_sword": "جعبه برش فروسیوم",
+"item.mechanized_souls.guitar": "رزماری",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "لیمو و شیاطین",
+"item.mechanized_souls.knight_spawnegg": "شوالیه فروسیوم",
+"entity.mechanized_souls.knight": "شوالیه فروسیوم",
+"info.text.knight_activate": "حالت: فعال!",
+"info.text.knight_deactivate": "وضعیت: غیر فعال!",
+"item.mechanized_souls.sussy_item": "آیتم سوسی",
+"effect.mechanized_souls.soullock": "سوللاک"
+}

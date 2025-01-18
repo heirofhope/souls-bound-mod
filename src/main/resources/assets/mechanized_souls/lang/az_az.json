@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrosium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Soul çerezi",
+"item.mechanized_souls.lemon": "Limon",
+"item.mechanized_souls.book_cypher": "Boşluq Walker Tome",
+"item.mechanized_souls.closed_contract": "Imzalanan müqavilə",
+"item.mechanized_souls.open_contract": "Boş müqavilə",
+"item.mechanized_souls.dawn_cleaver": "Şəfəq təmizləyicisi",
+"item.mechanized_souls.closed_contract.tooltip": "{player} tərəfindən imzalanmışdır",
+"item.mechanized_souls.soul_scythe": "Ruh Snatcher",
+"item.mechanized_souls.rock_sword": "Steel Box Cutter",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Limon və Cinlər",
+"item.mechanized_souls.knight_spawnegg": "Railroad Knight",
+"entity.mechanized_souls.knight": "Railroad Knight",
+"info.text.knight_activate": "Dövlət: Aktiv!",
+"info.text.knight_deactivate": "Dövlət: Aktiv!",
+"item.mechanized_souls.sussy_item": "Sussy Məhsul",
+"effect.mechanized_souls.soullock": "SoulLock"
+}
