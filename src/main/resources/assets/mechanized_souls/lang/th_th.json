@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "เฟอร์โรเซียม",
+"item.mechanized_souls.halberd": "ฮัลเบิร์ด",
+"item.mechanized_souls.soul_cookie": "คุกกี้โซล",
+"item.mechanized_souls.lemon": "มะนาว",
+"item.mechanized_souls.book_cypher": "โทเมอออฟเดอะวอยล์คเกอร์",
+"item.mechanized_souls.closed_contract": "สัญญาที่ลงนามแล้ว",
+"item.mechanized_souls.open_contract": "สัญญาว่างเปล่า",
+"item.mechanized_souls.dawn_cleaver": "ดอรุณคลีเวอร์",
+"item.mechanized_souls.closed_contract.tooltip": "ลงนามโดย {ผู้เล่น}",
+"item.mechanized_souls.soul_scythe": "โซลสแนชเชอร์",
+"item.mechanized_souls.rock_sword": "เครื่องตัดกล่องเหล็ก",
+"item.mechanized_souls.guitar": "โรสแมรี่",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "มะนาวและปีศาจ",
+"item.mechanized_souls.knight_spawnegg": "อัศวินเฟอร์โรเซียม",
+"entity.mechanized_souls.knight": "อัศวินเฟอร์โรเซียม",
+"info.text.knight_activate": "รัฐ: ใช้งานอยู่!",
+"info.text.knight_deactivate": "รัฐ: ไม่ใช้งาน!",
+"item.mechanized_souls.sussy_item": "ซัสซีไอเทม",
+"effect.mechanized_souls.soullock": "โซลล็อค"
+}

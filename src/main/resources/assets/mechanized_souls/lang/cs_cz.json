@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrovácium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Soubory cookie duše",
+"item.mechanized_souls.lemon": "Citron",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
+"item.mechanized_souls.closed_contract": "Podepsaná smlouva",
+"item.mechanized_souls.open_contract": "Prázdná smlouva",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Podepsáno uživatelem {player}",
+"item.mechanized_souls.soul_scythe": "Zloděč duší",
+"item.mechanized_souls.rock_sword": "Ferrocium Box-Cutter",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Citrony a démoni",
+"item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
+"entity.mechanized_souls.knight": "Ferrocium Knight",
+"info.text.knight_activate": "Stav: Aktivní!",
+"info.text.knight_deactivate": "Stav: Neaktivní!",
+"item.mechanized_souls.sussy_item": "Zboží Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

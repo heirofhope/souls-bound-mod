@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "פרוציום",
+"item.mechanized_souls.halberd": "הלברד",
+"item.mechanized_souls.soul_cookie": "עוגיית נשמה",
+"item.mechanized_souls.lemon": "לימון",
+"item.mechanized_souls.book_cypher": "ספר הריק ווקר",
+"item.mechanized_souls.closed_contract": "חוזה חתום",
+"item.mechanized_souls.open_contract": "חוזה ריק",
+"item.mechanized_souls.dawn_cleaver": "דון קליבר",
+"item.mechanized_souls.closed_contract.tooltip": "חתום ע"י {שחקן}",
+"item.mechanized_souls.soul_scythe": "חוטף נשמה",
+"item.mechanized_souls.rock_sword": "חותך קופסאות פרוציום",
+"item.mechanized_souls.guitar": "רוזמרי",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "לימונים ושדים",
+"item.mechanized_souls.knight_spawnegg": "אביר פרוציום",
+"entity.mechanized_souls.knight": "אביר פרוציום",
+"info.text.knight_activate": "מדינה: פעיל!",
+"info.text.knight_deactivate": "מדינה: לא פעיל!",
+"item.mechanized_souls.sussy_item": "פריט סוסי",
+"effect.mechanized_souls.soullock": "סולוק"
+}

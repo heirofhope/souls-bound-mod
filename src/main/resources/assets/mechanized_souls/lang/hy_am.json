@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ֆերոզիում",
+"item.mechanized_souls.halberd": "Հալբերդ",
+"item.mechanized_souls.soul_cookie": "Հոգու թխվածք",
+"item.mechanized_souls.lemon": "Կիտրոն",
+"item.mechanized_souls.book_cypher": "Վատ քայլողի տոմե",
+"item.mechanized_souls.closed_contract": "Ստորագրված պայմանագիր",
+"item.mechanized_souls.open_contract": "Դատարկ պայմանագիր",
+"item.mechanized_souls.dawn_cleaver": "Դաունս Քլիվեր",
+"item.mechanized_souls.closed_contract.tooltip": "Ստորագրված է {խաղացողի} կողմից",
+"item.mechanized_souls.soul_scythe": "Հոգի խլող",
+"item.mechanized_souls.rock_sword": "Երկաթյա տուփի կտրիչ",
+"item.mechanized_souls.guitar": "Ռոզմարին",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Կիտրոններ և դևեր",
+"item.mechanized_souls.knight_spawnegg": "Երկաթուղային ասպետ",
+"entity.mechanized_souls.knight": "Երկաթուղային ասպետ",
+"info.text.knight_activate": "Պետություն: Ակտիվ!",
+"info.text.knight_deactivate": "Պետություն: Ոչ ակտիվ!",
+"item.mechanized_souls.sussy_item": "Սուսսի Նյութը",
+"effect.mechanized_souls.soullock": "ՍուլԼոկ"
+}

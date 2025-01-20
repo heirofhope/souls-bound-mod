@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocio",
+"item.mechanized_souls.halberd": "Alabarda",
+"item.mechanized_souls.soul_cookie": "Biscotto dell'anima",
+"item.mechanized_souls.lemon": "Limone",
+"item.mechanized_souls.book_cypher": "Tomo del Vuoto Walker",
+"item.mechanized_souls.closed_contract": "Contratto firmato",
+"item.mechanized_souls.open_contract": "Contratto vuoto",
+"item.mechanized_souls.dawn_cleaver": "Mannaia Dawn",
+"item.mechanized_souls.closed_contract.tooltip": "Autografato da {player}",
+"item.mechanized_souls.soul_scythe": "Ladro di anime",
+"item.mechanized_souls.rock_sword": "Ferrocium Box Cutter",
+"item.mechanized_souls.guitar": "Rosmarino",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Limoni e demoni",
+"item.mechanized_souls.knight_spawnegg": "Cavaliere Ferrocium",
+"entity.mechanized_souls.knight": "Cavaliere Ferrocium",
+"info.text.knight_activate": "Stato: Attivo!",
+"info.text.knight_deactivate": "Stato: inattivo!",
+"item.mechanized_souls.sussy_item": "Articolo Sussy",
+"effect.mechanized_souls.soullock": "Soul Lock"
+}

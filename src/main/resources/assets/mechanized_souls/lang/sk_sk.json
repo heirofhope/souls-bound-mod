@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Soul Cookie",
+"item.mechanized_souls.lemon": "Citrón",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
+"item.mechanized_souls.closed_contract": "Podpísaná zmluva",
+"item.mechanized_souls.open_contract": "Prázdna zmluva",
+"item.mechanized_souls.dawn_cleaver": "Sekáč úsvitu",
+"item.mechanized_souls.closed_contract.tooltip": "Podpísané používateľom {player}",
+"item.mechanized_souls.soul_scythe": "Porovnávač duše",
+"item.mechanized_souls.rock_sword": "Steel Box Cutter",
+"item.mechanized_souls.guitar": "Rozmarín",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Citróny a démoni",
+"item.mechanized_souls.knight_spawnegg": "Železničný rytier",
+"entity.mechanized_souls.knight": "Železničný rytier",
+"info.text.knight_activate": "Štát: Aktívny!",
+"info.text.knight_deactivate": "Štát: Neaktívny!",
+"item.mechanized_souls.sussy_item": "Položka Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

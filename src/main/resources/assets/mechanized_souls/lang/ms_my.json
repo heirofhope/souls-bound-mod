@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Kuki Jiwa",
+"item.mechanized_souls.lemon": "Lemon",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walker",
+"item.mechanized_souls.closed_contract": "Kontrak ditandatangani",
+"item.mechanized_souls.open_contract": "Kontrak Kosong",
+"item.mechanized_souls.dawn_cleaver": "Pemangkas Subuh",
+"item.mechanized_souls.closed_contract.tooltip": "Ditandatangani oleh {player}",
+"item.mechanized_souls.soul_scythe": "Penampas Jiwa",
+"item.mechanized_souls.rock_sword": "Steel Box Cutter",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Lemon & Iblis",
+"item.mechanized_souls.knight_spawnegg": "Railroad Knight",
+"entity.mechanized_souls.knight": "Railroad Knight",
+"info.text.knight_activate": "Negeri: Aktif!",
+"info.text.knight_deactivate": "Negeri: Tidak aktif!",
+"item.mechanized_souls.sussy_item": "Item Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

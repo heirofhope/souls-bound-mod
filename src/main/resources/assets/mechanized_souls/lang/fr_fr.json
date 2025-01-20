@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Hallebarde",
+"item.mechanized_souls.soul_cookie": "Soul Cookie",
+"item.mechanized_souls.lemon": "Citron",
+"item.mechanized_souls.book_cypher": "Le livre de The Void Walker",
+"item.mechanized_souls.closed_contract": "Contrat signé",
+"item.mechanized_souls.open_contract": "Contrat vide",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Signé par {player}",
+"item.mechanized_souls.soul_scythe": "Soul Snatcher",
+"item.mechanized_souls.rock_sword": "Coupe-boîtes en ferrocium",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Citrons et démons",
+"item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
+"entity.mechanized_souls.knight": "Ferrocium Knight",
+"info.text.knight_activate": "État : Actif !",
+"info.text.knight_deactivate": "État : Inactif !",
+"item.mechanized_souls.sussy_item": "Objet Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

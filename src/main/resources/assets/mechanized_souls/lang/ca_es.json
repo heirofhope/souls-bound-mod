@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferroci",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Galeta Soul",
+"item.mechanized_souls.lemon": "Llimona",
+"item.mechanized_souls.book_cypher": "Tome of the Void Walker",
+"item.mechanized_souls.closed_contract": "Contracte signat",
+"item.mechanized_souls.open_contract": "Contracte buit",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Signat per {jugador}",
+"item.mechanized_souls.soul_scythe": "Arrabassador d'ànimes",
+"item.mechanized_souls.rock_sword": "Cutter de caixes de ferro",
+"item.mechanized_souls.guitar": "Romaní",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Llimones i dimonis",
+"item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
+"entity.mechanized_souls.knight": "Ferrocium Knight",
+"info.text.knight_activate": "Estat: Actiu!",
+"info.text.knight_deactivate": "Estat: Inactiu!",
+"item.mechanized_souls.sussy_item": "Element Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Fianán Soul",
+"item.mechanized_souls.lemon": "Líomóid",
+"item.mechanized_souls.book_cypher": "Tome Of The Void Walk Walker",
+"item.mechanized_souls.closed_contract": "Conradh Sínithe",
+"item.mechanized_souls.open_contract": "Conradh folamh",
+"item.mechanized_souls.dawn_cleaver": "Cleaner Dawn",
+"item.mechanized_souls.closed_contract.tooltip": "Sínithe ag {player}",
+"item.mechanized_souls.soul_scythe": "Snatcher Soul",
+"item.mechanized_souls.rock_sword": "Iron Box Cutter",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Liomóidí & Deamhain",
+"item.mechanized_souls.knight_spawnegg": "Railroad Knight",
+"entity.mechanized_souls.knight": "Railroad Knight",
+"info.text.knight_activate": "Stát: Gníomhach!",
+"info.text.knight_deactivate": "Stát: Neamhghníomhach!",
+"item.mechanized_souls.sussy_item": "Mír Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

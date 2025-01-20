@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocio",
+"item.mechanized_souls.halberd": "Alabarda",
+"item.mechanized_souls.soul_cookie": "Galleta Soul",
+"item.mechanized_souls.lemon": "Limón",
+"item.mechanized_souls.book_cypher": "Tomo del caminante del vacío",
+"item.mechanized_souls.closed_contract": "Contrato firmado",
+"item.mechanized_souls.open_contract": "Contrato vacío",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Firmado por {player}",
+"item.mechanized_souls.soul_scythe": "Ladrón de almas",
+"item.mechanized_souls.rock_sword": "Cortador de cajas de ferrocio",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Limones y demonios",
+"item.mechanized_souls.knight_spawnegg": "Caballero de Ferrocio",
+"entity.mechanized_souls.knight": "Caballero de Ferrocio",
+"info.text.knight_activate": "Estado: ¡Activo!",
+"info.text.knight_deactivate": "Estado: ¡Inactivo!",
+"item.mechanized_souls.sussy_item": "Artículo Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

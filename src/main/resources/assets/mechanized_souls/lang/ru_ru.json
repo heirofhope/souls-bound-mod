@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ферроций",
+"item.mechanized_souls.halberd": "алебарда",
+"item.mechanized_souls.soul_cookie": "Печенье для души",
+"item.mechanized_souls.lemon": "Лимон",
+"item.mechanized_souls.book_cypher": "Книга «Волк Бездны»",
+"item.mechanized_souls.closed_contract": "Подписанный контракт",
+"item.mechanized_souls.open_contract": "Пустой контракт",
+"item.mechanized_souls.dawn_cleaver": "Дон Кливер",
+"item.mechanized_souls.closed_contract.tooltip": "Подписано {игроком}",
+"item.mechanized_souls.soul_scythe": "Похититель душ",
+"item.mechanized_souls.rock_sword": "Ферроциевый коробочный резак",
+"item.mechanized_souls.guitar": "розмари",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Лимоны и демоны",
+"item.mechanized_souls.knight_spawnegg": "Ферроциевый рыцарь",
+"entity.mechanized_souls.knight": "Ферроциевый рыцарь",
+"info.text.knight_activate": "Состояние: Активно!",
+"info.text.knight_deactivate": "Состояние: Неактивно!",
+"item.mechanized_souls.sussy_item": "Сусси Итм",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

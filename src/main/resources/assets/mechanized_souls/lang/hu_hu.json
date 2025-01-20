@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Soul Cookie",
+"item.mechanized_souls.lemon": "Citrom",
+"item.mechanized_souls.book_cypher": "Az üregjáró könyve",
+"item.mechanized_souls.closed_contract": "Aláírt szerződés",
+"item.mechanized_souls.open_contract": "Üres szerződés",
+"item.mechanized_souls.dawn_cleaver": "Hajnalhasító",
+"item.mechanized_souls.closed_contract.tooltip": "Aláírta: {player}",
+"item.mechanized_souls.soul_scythe": "Soul Snatcher",
+"item.mechanized_souls.rock_sword": "Steel Box-Cutter",
+"item.mechanized_souls.guitar": "Rozmaring",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Citromok és démonok",
+"item.mechanized_souls.knight_spawnegg": "Vasúti lovag",
+"entity.mechanized_souls.knight": "Vasúti lovag",
+"info.text.knight_activate": "Állam: Aktív!",
+"info.text.knight_deactivate": "Állam: Inaktív!",
+"item.mechanized_souls.sussy_item": "Sussy tétel",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

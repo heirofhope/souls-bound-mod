@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "फेरोसियम",
+"item.mechanized_souls.halberd": "हलबर्ड",
+"item.mechanized_souls.soul_cookie": "सोल कुकी",
+"item.mechanized_souls.lemon": "नींबू",
+"item.mechanized_souls.book_cypher": "टोम ऑफ़ द वॉयड वॉकर",
+"item.mechanized_souls.closed_contract": "हस्ताक्षरित अनुबंध",
+"item.mechanized_souls.open_contract": "खाली अनुबंध",
+"item.mechanized_souls.dawn_cleaver": "डॉन क्लीवर",
+"item.mechanized_souls.closed_contract.tooltip": "{player} द्वारा हस्ताक्षरित",
+"item.mechanized_souls.soul_scythe": "सोल स्नैचर",
+"item.mechanized_souls.rock_sword": "फेरोसियम बॉक्स-कटर",
+"item.mechanized_souls.guitar": "रोजमैरी",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "नींबू और दानव",
+"item.mechanized_souls.knight_spawnegg": "फेरोसियम नाइट",
+"entity.mechanized_souls.knight": "फेरोसियम नाइट",
+"info.text.knight_activate": "राज्य: सक्रिय!",
+"info.text.knight_deactivate": "राज्य: निष्क्रिय!",
+"item.mechanized_souls.sussy_item": "सुसी आइटम",
+"effect.mechanized_souls.soullock": "सोल लॉक"
+}

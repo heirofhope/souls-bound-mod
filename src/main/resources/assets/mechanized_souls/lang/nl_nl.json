@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Hellebaard",
+"item.mechanized_souls.soul_cookie": "Soul Cookie",
+"item.mechanized_souls.lemon": "Citroen",
+"item.mechanized_souls.book_cypher": "Het boek van The Void Walker",
+"item.mechanized_souls.closed_contract": "Ondertekend contract",
+"item.mechanized_souls.open_contract": "Leeg contract",
+"item.mechanized_souls.dawn_cleaver": "Dawn Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Gesigneerd door {player}",
+"item.mechanized_souls.soul_scythe": "Soul Snatcher",
+"item.mechanized_souls.rock_sword": "Kistensnijder van ferrocium",
+"item.mechanized_souls.guitar": "Rozemarijn",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Citroenen en demonen",
+"item.mechanized_souls.knight_spawnegg": "Ferrocium Knight",
+"entity.mechanized_souls.knight": "Ferrocium Knight",
+"info.text.knight_activate": "Staat: Actief!",
+"info.text.knight_deactivate": "Staat: Inactief!",
+"item.mechanized_souls.sussy_item": "Sussy voorwerp",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

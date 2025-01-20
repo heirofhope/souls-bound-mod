@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ферроциум",
+"item.mechanized_souls.halberd": "Халберд",
+"item.mechanized_souls.soul_cookie": "Сэтгэлийн күүки",
+"item.mechanized_souls.lemon": "Нимбэг",
+"item.mechanized_souls.book_cypher": "Дуугүй Уолкерын Том",
+"item.mechanized_souls.closed_contract": "Гарын үсэг зурсан гэрээ",
+"item.mechanized_souls.open_contract": "Хоосон гэрээ",
+"item.mechanized_souls.dawn_cleaver": "Даун Кливер",
+"item.mechanized_souls.closed_contract.tooltip": "Гарын үсэг зурсан {тоглогч}",
+"item.mechanized_souls.soul_scythe": "Сэтгэлийг булааж авагч",
+"item.mechanized_souls.rock_sword": "Төмөр хайрцаг таслагч",
+"item.mechanized_souls.guitar": "Розмари",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Нимонууд ба чөтгөрүүд",
+"item.mechanized_souls.knight_spawnegg": "Ферроциум Найт",
+"entity.mechanized_souls.knight": "Ферроциум Найт",
+"info.text.knight_activate": "Төр улс: Идэвхтэй!",
+"info.text.knight_deactivate": "Төр улс: Идэвхигүй!",
+"item.mechanized_souls.sussy_item": "Сусси Барааны зүйл",
+"effect.mechanized_souls.soullock": "Соуллок"
+}

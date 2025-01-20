@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Фероциум",
+"item.mechanized_souls.halberd": "Халберд",
+"item.mechanized_souls.soul_cookie": "Бисквитка за душа",
+"item.mechanized_souls.lemon": "Лимон",
+"item.mechanized_souls.book_cypher": "Том на празнотата Уокър",
+"item.mechanized_souls.closed_contract": "Подписан договор",
+"item.mechanized_souls.open_contract": "Празен договор",
+"item.mechanized_souls.dawn_cleaver": "Даун Клевър",
+"item.mechanized_souls.closed_contract.tooltip": "Подписано от {играч}",
+"item.mechanized_souls.soul_scythe": "Грабвач на душа",
+"item.mechanized_souls.rock_sword": "Резачка за железни кутии",
+"item.mechanized_souls.guitar": "Розмарин",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Лимони и демони",
+"item.mechanized_souls.knight_spawnegg": "Фероциум Рицар",
+"entity.mechanized_souls.knight": "Фероциум Рицар",
+"info.text.knight_activate": "Държава: Активен!",
+"info.text.knight_deactivate": "Държава: Неактивен!",
+"item.mechanized_souls.sussy_item": "Суси артикул",
+"effect.mechanized_souls.soullock": "Соуллок"
+}

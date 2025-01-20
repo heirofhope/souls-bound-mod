@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Cookie Soul",
+"item.mechanized_souls.lemon": "Limon",
+"item.mechanized_souls.book_cypher": "Tome of the Voice Walker",
+"item.mechanized_souls.closed_contract": "Kontrata e nënshkruar",
+"item.mechanized_souls.open_contract": "Kontrata e zbrazët",
+"item.mechanized_souls.dawn_cleaver": "Agimi Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Nënshkruar nga {player}",
+"item.mechanized_souls.soul_scythe": "Grabitës i shpirtit",
+"item.mechanized_souls.rock_sword": "Steel Box Cutter",
+"item.mechanized_souls.guitar": "Rozmarinë",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Limonët dhe demonët",
+"item.mechanized_souls.knight_spawnegg": "Rail Knight",
+"entity.mechanized_souls.knight": "Rail Knight",
+"info.text.knight_activate": "Shteti: Aktiv!",
+"info.text.knight_deactivate": "Shteti: Joaktiv!",
+"item.mechanized_souls.sussy_item": "Artikulli Sussy",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

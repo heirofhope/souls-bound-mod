@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "Ferrocium",
+"item.mechanized_souls.halberd": "Halberd",
+"item.mechanized_souls.soul_cookie": "Sálarkökur",
+"item.mechanized_souls.lemon": "Sítróna",
+"item.mechanized_souls.book_cypher": "Tome of the Void Walker",
+"item.mechanized_souls.closed_contract": "Undirritaður samningur",
+"item.mechanized_souls.open_contract": "Tómur samningur",
+"item.mechanized_souls.dawn_cleaver": "Dögun Cleaver",
+"item.mechanized_souls.closed_contract.tooltip": "Undirritað af {player}",
+"item.mechanized_souls.soul_scythe": "Soul Snatcher",
+"item.mechanized_souls.rock_sword": "Steel Box Cutter",
+"item.mechanized_souls.guitar": "Rosemary",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "Sítrónur og djöflar",
+"item.mechanized_souls.knight_spawnegg": "Rail Knight",
+"entity.mechanized_souls.knight": "Rail Knight",
+"info.text.knight_activate": "Ríki: Virkt!",
+"info.text.knight_deactivate": "Ríki: Óvirkt!",
+"item.mechanized_souls.sussy_item": "Sussy Item",
+"effect.mechanized_souls.soullock": "SoulLock"
+}

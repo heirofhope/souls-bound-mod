@@ -1,0 +1,22 @@
+{
+"item.mechanized_souls.ferrocium": "فيروسيوم",
+"item.mechanized_souls.halberd": "هالبيرد",
+"item.mechanized_souls.soul_cookie": "سول كوكي",
+"item.mechanized_souls.lemon": "ليمون",
+"item.mechanized_souls.book_cypher": "تومي أوف ذا فويد ووكر",
+"item.mechanized_souls.closed_contract": "عقد موقّع",
+"item.mechanized_souls.open_contract": "عقد فارغ",
+"item.mechanized_souls.dawn_cleaver": "داون كليفر",
+"item.mechanized_souls.closed_contract.tooltip": "تم التوقيع عليه من قبل {player}",
+"item.mechanized_souls.soul_scythe": "ساول سناتشر",
+"item.mechanized_souls.rock_sword": "قطاعة صندوق الفيروسيوم",
+"item.mechanized_souls.guitar": "روزماري",
+"itemGroup.mechanized_souls.heir_tab": "Souls-Bound",
+"itemGroup.mechanized_souls.fox_tab": "الليمون والشياطين",
+"item.mechanized_souls.knight_spawnegg": "فيروسيوم نايت",
+"entity.mechanized_souls.knight": "فيروسيوم نايت",
+"info.text.knight_activate": "الحالة: نشطة!",
+"info.text.knight_deactivate": "الحالة: غير نشطة!",
+"item.mechanized_souls.sussy_item": "منتج سوسي",
+"effect.mechanized_souls.soullock": "سوللوك"
+}
