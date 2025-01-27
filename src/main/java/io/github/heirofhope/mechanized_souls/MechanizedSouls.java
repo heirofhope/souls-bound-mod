@@ -5,8 +5,6 @@ import io.github.heirofhope.mechanized_souls.entity.ModEntities;
 import io.github.heirofhope.mechanized_souls.entity.custom.KnightEntity;
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import io.github.heirofhope.mechanized_souls.particle.ModParticles;
-import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheChainLauncher;
-import io.github.heirofhope.mechanized_souls.util.scytheChain.ScytheChainMain;
 import io.github.heirofhope.mechanized_souls.util.BeforeDeathHandler;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
@@ -30,8 +28,7 @@ public class MechanizedSouls implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.KNIGHT, KnightEntity.createKnightAttributes());
 
-		ScytheChainLauncher.register();
-		ScytheChainMain.register();
+
 
 		BeforeDeathHandler.register();
 		ModParticles.registerParticles();
