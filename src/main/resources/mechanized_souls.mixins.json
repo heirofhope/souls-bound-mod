@@ -10,8 +10,8 @@
     "ItemRendererMixin",
     "ModelLoaderMixin",
     "PlayerEntityRendererMixin",
-    "client.BipedEntityModelMixin",
-    "client.PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "BipedEntityModelMixin"
   ],
   "injectors": {
     "defaultRequire": 1

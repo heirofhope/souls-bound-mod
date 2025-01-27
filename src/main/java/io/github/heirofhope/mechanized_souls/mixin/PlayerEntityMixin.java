@@ -1,7 +1,6 @@
-package io.github.heirofhope.mechanized_souls.mixin.client;
+package io.github.heirofhope.mechanized_souls.mixin;
 
 import io.github.heirofhope.mechanized_souls.item.ModItems;
-import io.github.heirofhope.mechanized_souls.item.custom.GuitarItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
@@ -17,7 +16,7 @@ public abstract class PlayerEntityMixin {
 		at = @At("HEAD"),
 		cancellable = true
 	)
-	private void onSwingHand(Hand hand, CallbackInfo info) {
+	private void swingHand(Hand hand, CallbackInfo info) {
 		PlayerEntity player = (PlayerEntity) (Object) this;
 		if (player.getStackInHand(hand).getItem() == ModItems.GUITAR) {
 			info.cancel();

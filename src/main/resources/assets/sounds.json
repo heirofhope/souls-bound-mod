@@ -1,17 +1,8 @@
 {
-  "guitar_hit": {
-    "subtitle": "mechinizedsouls.guitarhit",
-  "sounds": [
-  "mechinizedsouls:guitar_hit"
-]
-
-
+  "guitar_hit_sound": {
+    "subtitle": "sounds.mechanized_souls.guitar_hit",
+    "sounds": [
+        "mechanized_souls:guitar_hit"
+    ]
   }
-
-
-
-
-
-
-
 }

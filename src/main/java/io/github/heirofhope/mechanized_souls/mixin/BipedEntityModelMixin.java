@@ -1,4 +1,4 @@
-package io.github.heirofhope.mechanized_souls.mixin.client;
+package io.github.heirofhope.mechanized_souls.mixin;
 
 import io.github.heirofhope.mechanized_souls.item.ModItems;
 import net.fabricmc.api.EnvType;
@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(BipedEntityModel.class)
 public abstract class BipedEntityModelMixin<T extends LivingEntity> extends AnimalModel<T> {
 	@Inject(method = "setAngles(Lnet/minecraft/entity/LivingEntity;FFFFF)V", at = @At("TAIL"))
-	private void liby$setAngles(T livingEntity, float f, float g, float h, float i, float j, CallbackInfo ci) {
+	private void SoulsBound$setAngles(T livingEntity, float f, float g, float h, float i, float j, CallbackInfo ci) {
 		if (livingEntity.getMainHandStack().getItem().equals(ModItems.GUITAR) ) {
 			BipedEntityModel<? extends LivingEntity> model = (BipedEntityModel<? extends LivingEntity>) (Object) this;
 

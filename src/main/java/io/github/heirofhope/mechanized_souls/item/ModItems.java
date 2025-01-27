@@ -66,10 +66,12 @@ public class ModItems {
 
 
 
-	//public static final Item SUSSY_ITEM = registeritem("sussy_item",
-		//new SwordItem(ModToolMaterials.FOXIUM, 9999, 9999,
-		//	new QuiltItemSettings()));
 
+
+
+	public static final Item SUSSY_ITEM = registeritem("sussy_item",
+		new SwordItem(ModToolMaterials.FERROCIUM, 9999, 9999,
+			new QuiltItemSettings()));
 
 
 	private static Item registeritem(String name, Item DawncleaverItem) {

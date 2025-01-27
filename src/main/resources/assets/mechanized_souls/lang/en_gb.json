@@ -23,5 +23,7 @@
 
   "item.mechanized_souls.sussy_item": "Suspicious Looking Item",
 
-  "effect.mechanized_souls.soullock": "SpiritStay"
+  "effect.mechanized_souls.soullock": "SpiritStay",
+
+  "sounds.mechanized_souls.guitar_hit": "Solo Guitar Used"
 }

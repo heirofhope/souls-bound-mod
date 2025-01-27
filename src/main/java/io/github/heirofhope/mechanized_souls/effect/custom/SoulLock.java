@@ -39,6 +39,7 @@ public class SoulLock extends StatusEffect {
 
 			//checks if the animation is still running or already done
 			if (remainingDuration < 5980) {
+
 //=================[ static rendering shenanigans ] =====================
 				//render the chains and circles without movement
 				AzuraParticleRenderer.renderCircle(

@@ -6,7 +6,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MovementType;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.Vec3d;
 
 public class DashEnchantment extends Enchantment {
